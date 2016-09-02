@@ -1,0 +1,1 @@
+<?php /* */defined('BASEPATH') OR exit('No direct script access allowed');$lang['category_add'] = 'Agregar una nueva categoria';$lang['category_parent_category'] = 'Categoria padre';

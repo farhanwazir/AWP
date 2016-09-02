@@ -1,0 +1,150 @@
+<?php /* */
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+/*
+| -------------------------------------------------------------------------
+| URI ROUTING
+| -------------------------------------------------------------------------
+| This file lets you re-map URI requests to specific controller functions.
+|
+| Typically there is a one-to-one relationship between a URL string
+| and its corresponding controller class/method. The segments in a
+| URL normally follow this pattern:
+|
+|	example.com/class/method/id/
+|
+| In some instances, however, you may want to remap this relationship
+| so that a different class/function is called than the one
+| corresponding to the URL.
+|
+| Please see the user guide for complete details:
+|
+|	http://codeigniter.com/user_guide/general/routing.html
+|
+| -------------------------------------------------------------------------
+| RESERVED ROUTES
+| -------------------------------------------------------------------------
+|
+| There are three reserved routes:
+|
+|	$route['default_controller'] = 'welcome';
+|
+| This route indicates which controller class should be loaded if the
+| URI contains no data. In the above example, the "welcome" class
+| would be loaded.
+|
+|	$route['404_override'] = 'errors/page_missing';
+|
+| This route will tell the Router which controller/method to use if those
+| provided in the URL cannot be matched to a valid route.
+|
+|	$route['translate_uri_dashes'] = FALSE;
+|
+| This is not exactly a route, but allows you to automatically route
+| controller and method names that contain dashes. '-' isn't a valid
+| class or method name character, so it requires translation.
+| When you set this option to TRUE, it will replace ALL dashes in the
+| controller and method URI segments.
+|
+| Examples:	my-controller/index	-> my_controller/index
+|		my-controller/my-method	-> my_controller/my_method
+*/
+$route['default_controller'] = 'auth/login';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+
+$route['admin'] = 'admin/dashboard';
+
+/* AURICELL */
+//Portability
+$route['admin/report/portability'] = 'admin/reports/portability_controller/index';
+$route['admin/report/portability/ajax'] = 'admin/reports/portability_controller/getRawData';
+//Chips sales
+$route['admin/report/chips/sales'] = 'admin/reports/chips_controller/index';
+$route['admin/report/chips/sales/ajax'] = 'admin/reports/chips_controller/getRawData';
+//Airtime sales
+$route['admin/report/airtime/sales'] = 'admin/reports/airtime_controller/index';
+$route['admin/report/airtime/sales/ajax'] = 'admin/reports/airtime_controller/getRawData';
+$route['admin/report/airtime/stock/history'] = 'admin/reports/airtime_controller/index_stock';
+$route['admin/report/airtime/stock/history/ajax'] = 'admin/reports/airtime_controller/getRawData_stock';
+$route['admin/setup/master/airtime'] = 'admin/airtime_controller/index';
+$route['admin/setup/master/airtime/ajax'] = 'admin/airtime_controller/getRawData_all';
+$route['admin/setup/master/airtime/add/balance'] = 'admin/airtime_controller/addToMasterBalance';
+
+$route['admin/service/airtime/company/history/ajax'] = 'admin/airtime_controller/getRawData_company_history'; /* Assign airtime */
+$route['admin/service/airtime/company/assign'] = 'admin/airtime_controller/index_assign'; /* Assign to company form */
+$route['admin/service/airtime/company/balance'] = 'admin/airtime_controller/getCompanyMasterBalance'; /* Get current balance company*/
+$route['admin/service/airtime/company/store'] = 'admin/airtime_controller/addToCompanyMasterBalance'; /* Assign to company */
+
+
+//stars sales
+$route['admin/report/all/stars/sales'] = 'admin/reports/stars_controller/index_report_all';
+$route['admin/report/all/stars/sales/ajax'] = 'admin/reports/stars_controller/getRawData_report_all';
+//detailed sales
+$route['admin/report/sales'] = 'admin/reports/custom_controller/index';
+$route['admin/report/sales/star/ajax'] = 'admin/reports/custom_controller/getRawData_star';
+$route['admin/report/sales/outlet/ajax'] = 'admin/reports/custom_controller/getRawData_outlet';
+
+//Categories
+$route['admin/setup/categories'] = 'admin/categories_controller/index';
+$route['admin/setup/categories/ajax'] = 'admin/categories_controller/getRawData_all';
+$route['admin/setup/category/add'] = 'admin/categories_controller/add';
+$route['admin/setup/category/store'] = 'admin/categories_controller/store';
+$route['admin/setup/category/edit'] = 'admin/categories_controller/edit';
+$route['admin/setup/category/update'] = 'admin/categories_controller/update';
+
+//services
+$route['admin/setup/services'] = 'admin/services_controller/index';
+$route['admin/setup/services/ajax'] = 'admin/services_controller/getRawData_all';
+$route['admin/setup/service/add'] = 'admin/services_controller/add';
+$route['admin/setup/service/store'] = 'admin/services_controller/store';
+$route['admin/setup/service/edit'] = 'admin/services_controller/edit';
+$route['admin/setup/service/update'] = 'admin/services_controller/update';
+
+//services
+$route['admin/setup/products'] = 'admin/products_controller/index';
+$route['admin/setup/products/ajax'] = 'admin/products_controller/getRawData_all';
+$route['admin/setup/product/add'] = 'admin/products_controller/add';
+$route['admin/setup/product/store'] = 'admin/products_controller/store';
+$route['admin/setup/product/edit'] = 'admin/products_controller/edit';
+$route['admin/setup/product/update'] = 'admin/products_controller/update';
+
+//clients
+$route['admin/clients'] = 'admin/clients_controller/index';
+
+$route['admin/client/companies'] = 'admin/companies_controller/index';
+$route['admin/client/companies/ajax'] = 'admin/companies_controller/getRawData_all';
+$route['admin/client/company/add'] = 'admin/companies_controller/add';
+$route['admin/client/company/store'] = 'admin/companies_controller/store';
+$route['admin/client/company/edit'] = 'admin/companies_controller/edit';
+$route['admin/client/company/update'] = 'admin/companies_controller/update';
+
+$route['admin/client/company/outlets'] = 'admin/outlets_controller/index';
+$route['admin/client/company/outlets/ajax'] = 'admin/outlets_controller/getRawData_all';
+$route['admin/client/company/outlet/add'] = 'admin/outlets_controller/add';
+$route['admin/client/company/outlet/store'] = 'admin/outlets_controller/store';
+$route['admin/client/company/outlet/edit'] = 'admin/outlets_controller/edit';
+$route['admin/client/company/outlet/update'] = 'admin/outlets_controller/update';
+
+$route['admin/client/stars'] = 'admin/stars_controller/index';
+$route['admin/client/stars/ajax'] = 'admin/stars_controller/getRawData_all';
+$route['admin/client/star/add'] = 'admin/stars_controller/add';
+$route['admin/client/star/store'] = 'admin/stars_controller/store';
+$route['admin/client/star/edit'] = 'admin/stars_controller/edit';
+$route['admin/client/star/update'] = 'admin/stars_controller/update';
+
+$route['admin/users'] = 'admin/users_controller/index';
+$route['admin/users/ajax'] = 'admin/users_controller/getRawData_all';
+
+$route['admin/system/users'] = 'admin/users_controller/index_admin';
+$route['admin/system/users/ajax'] = 'admin/users_controller/getRawData_all_admin';
+
+$route['admin/client/users'] = 'admin/users_controller/index_client';
+$route['admin/client/users/ajax'] = 'admin/users_controller/getRawData_all_client';
+
+$route['admin/user/add'] = 'admin/users_controller/add';
+$route['admin/user/store'] = 'admin/users_controller/store';
+$route['admin/user/edit'] = 'admin/users_controller/edit';
+$route['admin/user/update'] = 'admin/users_controller/update';
+
+$route['form/control/company/outlets'] = 'admin/users_controller/getOutlets';

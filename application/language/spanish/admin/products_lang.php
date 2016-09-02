@@ -1,0 +1,1 @@
+<?php /* */defined('BASEPATH') OR exit('No direct script access allowed');$lang['product_add'] = 'Agregar nuevo producto';$lang['product_cicdn'] = 'ICCDN';$lang['product_category'] = 'Código';

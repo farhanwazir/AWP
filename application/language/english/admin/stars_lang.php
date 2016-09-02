@@ -1,0 +1,1 @@
+<?php /* */defined('BASEPATH') OR exit('No direct script access allowed');$lang['star_add'] = 'Add new star';$lang['star_register'] = 'Register star';$lang['star_edit'] = 'Edit star';$lang['star'] = 'Star';$lang['star_stars'] = 'Stars';$lang['star_all_stars'] = 'All stars';

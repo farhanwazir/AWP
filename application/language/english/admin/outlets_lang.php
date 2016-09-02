@@ -1,0 +1,1 @@
+<?php /* */defined('BASEPATH') OR exit('No direct script access allowed');$lang['outlet_add'] = 'Add new outlet';$lang['outlet_register'] = 'Register outlet';$lang['outlet_edit'] = 'Edit outlet';$lang['outlet'] = 'Outlet';$lang['outlet_outlets'] = 'Outlets';$lang['outlet_all_outlets'] = 'All outlets';$lang['outlet_code'] = 'Outlet code';
