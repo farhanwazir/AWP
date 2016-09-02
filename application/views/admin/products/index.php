@@ -57,8 +57,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                     <thead>
 
-                                    <th data-field="name"><?=lang('common_title');?></th>
-
                                     <th data-field="cicdn"><?=lang('product_cicdn');?></th>
 
                                     <th data-field="category"><?=lang('common_type');?></th>

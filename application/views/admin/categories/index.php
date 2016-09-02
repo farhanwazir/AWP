@@ -1,13 +1,13 @@
-<?php /* */
-defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="content-wrapper">
-    <section class="content-header">        <?php /* */
-        echo $pagetitle; ?><?php /* */
-        echo $breadcrumb; ?>    </section>
+    <section class="content-header">
+        <?php echo $pagetitle; ?>
+        <?php echo $breadcrumb; ?>
+    </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-12">                <?php /* */
-                if ($error) echo '<div class="alert alert-danger">' . $error . '</div>'; ?>
+            <div class="col-md-12">
+                <?php if ($error) echo '<div class="alert alert-danger">' . $error . '</div>'; ?>
                 <div class="box">
                     <div class="box-body">
                         <div class="row">

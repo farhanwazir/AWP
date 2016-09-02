@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                         </li>
                         <!-- Menu Footer-->
                         <li class="user-footer">
-                            <div class="pull-left"><a class="btn btn-default btn-flat" href="#">Profile</a></div>
+                            <!--<div class="pull-left"><a class="btn btn-default btn-flat" href="#">Profile</a></div>-->
                             <div class="pull-right"><a href="<?php /* */
                                 echo site_url('auth/logout/admin'); ?>" class="btn btn-default btn-flat"><?php /* */
                                     echo lang('header_sign_out'); ?></a></div>
