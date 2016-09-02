@@ -1,1 +1,37 @@
-<?php /* */defined('BASEPATH') OR exit('No direct script access allowed');$lang['common_report_col_transaction_id'] = 'No. Transacción';$lang['common_report_col_star'] = 'Star';$lang['common_report_col_transaction_type'] = 'Servicio / Producto';$lang['common_report_col_sale_amount'] = 'Monto';$lang['common_report_col_profit_fraction'] = 'Porcentaje de ganancia';$lang['common_report_col_profit'] = 'Ganancia estrella';$lang['common_report_col_created_at'] = 'Transacción en';$lang['common_report_col_updated_at'] = 'Trans. updated on';$lang['common_report_col_stock'] = 'Existencia';$lang['common_report_col_barcode'] = 'Codigo';$lang['common_report_col_user'] = 'Usuario';$lang['common_report_col_user_type'] = 'Tipo de usuario';
+<?php
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+
+
+$lang['common_report_col_transaction_id']           = 'Trans.#';
+
+$lang['common_report_col_response_code']           = 'Trans.# AT&T';
+
+$lang['common_report_col_response']           = 'Resposne';
+
+$lang['common_report_col_star'] = 'Estrella';
+
+$lang['common_report_col_transaction_type']             = 'Servicio/Producto';
+
+$lang['common_report_col_sale_amount']             = 'Cantidad';
+
+$lang['common_report_col_profit_fraction']             = 'Fracción de lucro';
+
+$lang['common_report_col_profit']             = 'Estrella ganan';
+
+$lang['common_report_col_created_at']             = 'Transacción de';
+
+$lang['common_report_col_updated_at']             = 'Trans. actualizado en';
+
+$lang['common_report_col_stock']             = 'Existencia';
+
+$lang['common_report_col_barcode']             = 'Código de Barras';
+
+$lang['common_report_col_user']             = 'Usuario';
+
+$lang['common_report_col_user_type']             = 'Tipo de usuario';
+
+$lang['common_report_col_company_name']             = 'Nombre de empresa';
+
+$lang['common_report_col_operator']             = 'Operador';

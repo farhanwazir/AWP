@@ -1,1 +1,64 @@
-<?php /* */defined('BASEPATH') OR exit('No direct script access allowed');$lang['common_report_filter'] = 'Filtro de reporte';$lang['common_title'] = 'Titulo';$lang['common_description'] = 'Descripción';$lang['common_price'] = 'Precio';$lang['common_barcode'] = 'Codigo ICCDN';$lang['common_profilt_fraction'] = 'Porcentaje de ganancia';$lang['common_type'] = 'Tipo';$lang['common_name'] = 'Nombre';$lang['common_username'] = 'Nombre de usuario';$lang['common_email'] = 'Email';$lang['common_telephone'] = 'Teléfono';$lang['common_address'] = 'Dirección';$lang['common_password'] = 'Contraseña';$lang['common_confirm_password'] = 'Confirmar contraseña';$lang['common_category'] = 'Categoria';$lang['common_created_at'] = 'Creado en';$lang['common_submit'] = 'Enviar';$lang['common_contact'] = 'Contacto';$lang['common_update'] = 'Actualizar';$lang['common_delete'] = 'Borrar';$lang['common_debit'] = 'Débito';$lang['common_credit'] = 'Crédito';$lang['common_required'] = '<span style="color: red; font-weight: bold">*</span>';$lang['common_user_type_admin'] = 'Administración';$lang['common_user_type_company'] = 'compañía';$lang['common_user_type_outlet'] = 'concesionario';$lang['common_user_type_star'] = 'Estrella';
+<?php
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+
+
+$lang['common_report_filter']           = 'Filtro de informe';
+
+$lang['common_title']           = 'Titulo';
+
+$lang['common_description']           = 'Descripción';
+
+$lang['common_price']           = 'Precio';
+
+$lang['common_barcode']           = 'Código de barras';
+
+$lang['common_profit_fraction']           = 'Fración de gananacias';
+
+$lang['common_type']           = 'Tipo';
+
+$lang['common_username']           = 'Nombre de usuario';
+
+$lang['common_name']           = 'Nombre';
+
+$lang['common_email']           = 'Email';
+
+$lang['common_telephone']           = 'Teléfono';
+
+$lang['common_address']           = 'Dirección';
+
+$lang['common_password']           = 'Contraseña';
+
+$lang['common_confirm_password']           = 'Confirmar Contraseña';
+
+$lang['common_category']           = 'Categoría';
+
+$lang['common_created_at']           = 'Creado en';
+
+$lang['common_submit']           = 'Enviar';
+
+$lang['common_contact']           = 'Contacto';
+
+$lang['common_update']           = 'Actualizar';
+
+$lang['common_delete']           = 'Eliminar';
+
+$lang['common_debit']           = 'Débito';
+
+$lang['common_credit']           = 'Crédito';
+
+$lang['common_required']           = '<span style="color: red; font-weight: bold">*</span>';
+
+
+
+$lang['common_user_type_admin']           = 'Administrador';
+
+$lang['common_user_type_company']           = 'Compañia';
+
+$lang['common_user_type_outlet']           = 'Salida';
+
+$lang['common_user_type_star']           = 'Estrella'; //Entrada si se refierian a start
+
+
+
