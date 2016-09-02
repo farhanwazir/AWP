@@ -9,59 +9,84 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                 echo site_url('admin/dashboard'); ?>"> <i class="fa fa-dashboard"></i> <span><?php /* */
                         echo lang('menu_dashboard'); ?></span> </a></li>
             <!-- Client menu -->
+            <?php if ($user_data->user_type == 'a'): ?>
             <li class="header text-uppercase"><?php /* */
                 echo lang('menu_client'); ?></li>
-            <!-- Only admin --> <?php /* */
-            if ($user_data->user_type == 'a'): ?>
+            <!-- Only admin -->
                 <li class="<?= active_link_controller('companies_controller') ?>"><a href="<?php /* */
                     echo site_url('admin/client/companies'); ?>"> <i class="fa fa-user"></i> <span><?php /* */
                             echo lang('menu_companies_list'); ?></span> </a></li>            <?php /* */
-            endif; ?>            <?php /* */
-            if ($user_data->user_type == 'dc'): ?>
-                <li class="<?= active_link_controller('outlets_controller') ?>"><a href="<?php /* */
-                    echo site_url('admin/client/company/outlets'); ?>"> <i class="fa fa-user"></i> <span><?php /* */
-                            echo lang('menu_outlets_list'); ?></span> </a></li>            <?php /* */
-            endif; ?>            <?php /* */
+            endif; ?>
+            <?php if ($user_data->user_type == 'dc'): ?>
+                <!--<li class="<?/*=active_link_controller('outlets_controller') */?>">
+                    <a href="<?/*=site_url('admin/client/company/outlets'); */?>">
+                        <i class="fa fa-user"></i>
+                        <span><?/*=lang('menu_outlets_list'); */?></span>
+                    </a>
+                </li>-->
+            <?php endif; ?>
+            <?php /* */
             if ($user_data->user_type == 'a'): ?>                <!--<li class="<? /*=active_link_controller('stars_controller')*/ ?>">                            <a href="<?php /* */ /*echo site_url('admin/client/stars'); */ ?>">                                <i class="fa fa-user"></i> <span><?php /* */ /*echo lang('menu_stars_list'); */ ?></span>                            </a>                        </li>-->
                 <li class="<?= active_link_controller('register_client') ?>"><a href="<?php /* */
                     echo site_url('admin/client/company/add'); ?>"> <i class="fa fa-user"></i> <span><?php /* */
                             echo lang('menu_client_register'); ?></span> </a>
-                </li>            <?php /* */ elseif ($user_data->user_type == 'dc'): ?>
-                <li class="<?= active_link_controller('register_client') ?>"><a href="<?php /* */
-                    echo site_url('admin/client/company/outlet/add'); ?>"> <i class="fa fa-user"></i> <span><?php /* */
-                            echo lang('menu_outlet_register'); ?></span> </a></li>            <?php /* */
-            endif; ?>            <?php /* */
-            if ($user_data->user_type == 'a'): ?>
-                <li class="<?= active_link_controller('assign_balance') ?>"><a href="<?php /* */
-                    echo site_url('admin/service/airtime/company/assign'); ?>"> <i class="fa fa-user"></i>
-                        <span><?php /* */
-                            echo lang('menu_client_assign_balance'); ?></span> </a></li>
-                <li class="<?= active_link_controller('assign_chips') ?>"><a href="<?php /* */
-                    echo site_url('admin/product/chips/company/assign'); ?>"> <i class="fa fa-shield"></i>
-                        <span><?php /* */
-                            echo lang('menu_client_assign_chip'); ?></span> </a>
-                </li>            <?php /* */ elseif ($user_data->user_type == 'dc'): ?>
-                <li class="<?= active_link_controller('assign_balance') ?>"><a href="<?php /* */
-                    echo site_url('admin/service/airtime/company/assign'); ?>"> <i class="fa fa-user"></i>
-                        <span><?php /* */
-                            echo lang('menu_client_assign_balance'); ?></span> </a></li>
-                <li class="<?= active_link_controller('assign_chips') ?>"><a href="<?php /* */
-                    echo site_url('admin/product/chips/company/assign'); ?>"> <i class="fa fa-shield"></i>
-                        <span><?php /* */
-                            echo lang('menu_client_assign_chip'); ?></span> </a></li>            <?php /* */
-            endif; ?> <!-- Users menu -->
+                </li>
+            <?php /* */ elseif ($user_data->user_type == 'dc'): ?>
+                <!--<li class="<?/*=active_link_controller('register_client') */?>">
+                    <a href="<?/*=site_url('admin/client/company/outlet/add'); */?>">
+                        <i class="fa fa-user"></i>
+                        <span><?/*=lang('menu_outlet_register'); */?></span>
+                    </a>
+                </li>-->            
+            <?php endif; ?>
+            <?php if ($user_data->user_type == 'a'): ?>
+                <li class="<?= active_link_controller('assign_balance') ?>">
+                    <a href="<?php echo site_url('admin/service/airtime/company/assign'); ?>">
+                        <i class="fa fa-user"></i>
+                        <span><?php echo lang('menu_client_assign_balance'); ?></span>
+                    </a>
+                </li>
+                <li class="<?= active_link_controller('assign_chips') ?>">
+                    <a href="<?php echo site_url('admin/product/chips/company/assign'); ?>">
+                        <i class="fa fa-shield"></i>
+                        <span><?php echo lang('menu_client_assign_chip'); ?></span>
+                    </a>
+                </li>
+            <?php elseif ($user_data->user_type == 'nope'): ?>
+                <li class="<?= active_link_controller('assign_balance') ?>">
+                    <a href="<?php echo site_url('admin/service/airtime/company/assign'); ?>">
+                        <i class="fa fa-user"></i>
+                        <span><?php echo lang('menu_client_assign_balance'); ?></span>
+                    </a>
+                </li>
+                <li class="<?= active_link_controller('assign_chips') ?>">
+                    <a href="<?php echo site_url('admin/product/chips/company/assign'); ?>">
+                        <i class="fa fa-shield"></i>
+                        <span><?php echo lang('menu_client_assign_chip'); ?></span>
+                    </a>
+                </li>
+            <?php endif; ?>
+            <!-- Users menu -->
             <li class="header text-uppercase"><?php /* */
                 echo lang('menu_users'); ?></li>
-            <li class="<?= active_link_controller('users_controller') ?>"><a href="<?php /* */
+            <li class="<?= active_link_controller('users_controller') ?>">
+                <a href="<?php /* */
                 echo site_url('admin/system/users'); ?>"> <i class="fa fa-shield"></i> <span><?php /* */
-                        echo lang('menu_users_admin'); ?></span> </a></li>
-            <li class="<?= active_link_controller('users_controller') ?>"><a href="<?php /* */
+                        echo lang('menu_users_admin'); ?></span> </a>
+            </li>
+            <?php if($user_data->user_type == 'a'): ?>
+            <li class="<?= active_link_controller('users_controller') ?>">
+                <a href="<?php /* */
                 echo site_url('admin/client/users'); ?>"> <i class="fa fa-shield"></i> <span><?php /* */
                         echo ($user_data->user_type == 'a') ? lang('menu_users_clients') : lang('menu_users_outlets'); ?></span>
-                </a></li>
+                </a>
+            </li>
+
             <li class="<?= active_link_controller('client_controller') ?>"><a href="<?php /* */
                 echo site_url('admin/user/add'); ?>"> <i class="fa fa-shield"></i> <span><?php /* */
-                        echo lang('menu_user_add'); ?></span> </a></li>
+                        echo lang('menu_user_add'); ?></span> </a>
+            </li>
+            <?php endif; ?>
             <!-- Setup menu --> <?php /* */
             if ($user_data->user_type == 'a'): ?>
                 <li class="header text-uppercase"><?php /* */

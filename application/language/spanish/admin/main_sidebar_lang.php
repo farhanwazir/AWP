@@ -176,7 +176,9 @@ $lang['menu_search'] = 'Buscar';
 
 /* ****** */$lang['menu_reports_star_conciliation']             = 'Conciliación, de la estrella';
 
-/* ****** */$lang['menu_reports_company_conciliation']             = 'Conciliation for company';
+/* ****** */$lang['menu_reports_company_conciliation']             = 'Conciliación, de cliente';
+
+/* ****** */$lang['menu_reports_company_chips_conciliation'] = 'Conciliación de ventas';
 
 /* ****** */$lang['menu_reports_all_stars_sale']             = 'Detalle del informe de ventas estrellas';
 

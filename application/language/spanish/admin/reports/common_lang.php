@@ -20,6 +20,8 @@ $lang['common_report_col_profit_fraction']             = 'Fracción de lucro';
 
 $lang['common_report_col_profit']             = 'Estrella ganan';
 
+$lang['common_report_col_company_profit']             = 'Importe pagado';
+
 $lang['common_report_col_created_at']             = 'Transacción de';
 
 $lang['common_report_col_updated_at']             = 'Trans. actualizado en';
@@ -35,3 +37,7 @@ $lang['common_report_col_user_type']             = 'Tipo de usuario';
 $lang['common_report_col_company_name']             = 'Nombre de empresa';
 
 $lang['common_report_col_operator']             = 'Operador';
+
+$lang['common_report_col_qty'] = 'Cantidad';
+
+$lang['common_report_col_product_id'] = 'Producto (SKU)';

@@ -185,7 +185,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     <th data-field="old_stock"><?= lang('service_airtime_old_stock'); ?></th>
                                     <th data-field="new_stock"><?= lang('service_airtime_stock'); ?></th>
                                     <th data-field="amount"><?= lang('service_airtime_transaction_amount'); ?></th>
-                                    <th data-field="created_at" data-sortable="true"
+                                    <th data-field="created_at"
+                                        data-sortable="true"
                                         data-order="desc"><?= lang('common_created_at'); ?></th>
                                     </thead>
                                 </table>

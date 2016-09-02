@@ -47,49 +47,35 @@ $lang['company_rfc_type_physical']           = 'Persona física';
 
 
 /**
-
  * BLOCK A
-
  * DO NOT CHANGE, THESE ARE BELONGS TO DATABASE
-
  */
 
 
+$lang['company_customer_type_wholesale_code'] = 'Wholesale';
 
-$lang['company_customer_type_wholesale_code']           = 'Venta al por mayor';
+$lang['company_customer_type_commission_code'] = 'Commission';
 
-$lang['company_customer_type_commission_code']           = 'Comisión';
-
-$lang['company_customer_type_direct_code']           = 'Directo';
-
+$lang['company_customer_type_direct_code'] = 'Direct';
 
 
 /**
-
  * END BLOCK A
-
  */
 
 
-
 /**
-
  * BLOCK B
-
  * DO NOT CHANGE, THESE ARE BELONGS TO DATABASE
-
  */
 
 
+$lang['company_rfc_type_moral_code'] = 'Moral person';
 
-$lang['company_rfc_type_moral_code']           = 'Persona moral';
-
-$lang['company_rfc_type_physical_code']           = 'Persona física';
+$lang['company_rfc_type_physical_code'] = 'Physical person';
 
 
 
 /**
-
  * END BLOCK B
-
  */

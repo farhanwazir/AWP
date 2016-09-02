@@ -20,6 +20,8 @@ $lang['common_report_col_profit_fraction']             = 'Profit fraction';
 
 $lang['common_report_col_profit']             = 'Star earn';
 
+$lang['common_report_col_company_profit']             = 'Company Profit';
+
 $lang['common_report_col_created_at']             = 'Transaction on';
 
 $lang['common_report_col_updated_at']             = 'Trans. updated on';

@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['footer_copyright']           = 'Copyright';
 
-$lang['footer_all_rights_reserved'] = 'Todos los derechos reservados;
+$lang['footer_all_rights_reserved'] = 'Todos los derechos reservados';
 
 $lang['footer_version']             = 'versión';
 
