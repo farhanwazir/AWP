@@ -58,7 +58,6 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                 params.bar_code = barcode;
                                                 return params;
                                             }
-                                            ;
                                             function refresh_table() {
                                                 data_url = "<?=base_url()?><?=$table_data_ajax_path; ?>";
                                                 if ($('[name="filters[company_id]"]').val() == 'None') {
@@ -74,7 +73,6 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                     getCurrentCompanyBalance();
                                                 }
                                             }
-                                            ;
                                             function getCurrentCompanyBalance() {
                                                 $('#company-current-balance').html('Loading...');
                                                 ajaxRequest("<?=base_url().$current_balance_url?>", {
@@ -89,7 +87,6 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                     }
                                                 }, false);
                                             }
-                                            ;
                                             $(document).ready(function () {
                                                 company_id = $('[name="filters[company_id]"]').val();
                                                 /*if form will submit*/

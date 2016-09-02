@@ -14,10 +14,12 @@
                     <div class="box-body">
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4"><h4><?= lang('common_report_filter'); ?></h4>
+
                                 <form method="get" id="report-filter-form">
                                     <div class="row">
                                         <div class="col-xs-12">
-                                            <div class="input-group"><select name="filters[outlet_id]" class="form-control">                                                        <?= $outlets_option ?>                                                    </select>
+                                            <div class="input-group"><select name="filters[outlet_id]"
+                                                                             class="form-control">                                                        <?= $outlets_option ?>                                                    </select>
                                                     <span class="input-group-btn">
                                                         <button class="btn btn-info">
                                                             <i class="glyphicon glyphicon-arrow-right"></i>
@@ -33,17 +35,16 @@
                                     function set_params(params) {
                                         params.<?php if($user_data->user_type == 'a'): ?>company_id<?php else: ?>outlet_id<?php endif; ?> = outlet_id;
                                         return params;
-                                    };
+                                    }
                                     function refresh_table() {
                                         data_url = "<?=base_url()?><?=$table_data_ajax_path; ?>";
                                         $('#report-table').bootstrapTable('refresh', {
                                             query: {<?php if($user_data->user_type == 'a'): ?>company_id<?php else: ?>outlet_id<?php endif; ?>: outlet_id},
                                             url: data_url
                                         });
-                                    };
-
+                                    }
                                     $(document).ready(function () {
-                                    /*if form will submit*/
+                                        /*if form will submit*/
                                         $('#report-filter-form').on('submit', function (e) {
                                             e.preventDefault();
                                             refresh_table();
@@ -77,13 +78,16 @@
                                     <th data-field="telephone"><?= lang('common_telephone'); ?></th>
                                     <th data-field="age"><?= lang('users_age'); ?></th>
                                     <th data-field="address"><?= lang('common_address'); ?></th>
-                                    <th data-field="user_type_definition" data-sortable="true"><?= lang('common_type'); ?></th>
+                                    <th data-field="user_type_definition"
+                                        data-sortable="true"><?= lang('common_type'); ?></th>
                                     <?php if ($user_data->user_type == 'dc'): ?>
                                         <th data-field="company" data-sortable="true"><?= lang('users_company'); ?></th>
                                         <th data-field="outlet" data-sortable="true"><?= lang('users_outlet'); ?></th>
                                     <?php endif; ?>
-                                    <th data-field="created_at" data-sortable="true" data-order="desc"><?= lang('common_created_at'); ?></th>
-                                    <th data-field="actions_col" data-formatter="add_actions" data-events="add_actions_events"></th>
+                                    <th data-field="created_at" data-sortable="true"
+                                        data-order="desc"><?= lang('common_created_at'); ?></th>
+                                    <th data-field="actions_col" data-formatter="add_actions"
+                                        data-events="add_actions_events"></th>
                                     </thead>
                                 </table>
 

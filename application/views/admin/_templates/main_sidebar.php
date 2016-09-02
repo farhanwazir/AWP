@@ -12,16 +12,16 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
             <?php if ($user_data->user_type == 'a'): ?>
             <li class="header text-uppercase"><?php /* */
                 echo lang('menu_client'); ?></li>
-            <!-- Only admin -->
+                <!-- Only admin -->
                 <li class="<?= active_link_controller('companies_controller') ?>"><a href="<?php /* */
                     echo site_url('admin/client/companies'); ?>"> <i class="fa fa-user"></i> <span><?php /* */
                             echo lang('menu_companies_list'); ?></span> </a></li>            <?php /* */
             endif; ?>
             <?php if ($user_data->user_type == 'dc'): ?>
-                <!--<li class="<?/*=active_link_controller('outlets_controller') */?>">
-                    <a href="<?/*=site_url('admin/client/company/outlets'); */?>">
+                <!--<li class="<? /*=active_link_controller('outlets_controller') */ ?>">
+                    <a href="<? /*=site_url('admin/client/company/outlets'); */ ?>">
                         <i class="fa fa-user"></i>
-                        <span><?/*=lang('menu_outlets_list'); */?></span>
+                        <span><? /*=lang('menu_outlets_list'); */ ?></span>
                     </a>
                 </li>-->
             <?php endif; ?>
@@ -32,12 +32,12 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             echo lang('menu_client_register'); ?></span> </a>
                 </li>
             <?php /* */ elseif ($user_data->user_type == 'dc'): ?>
-                <!--<li class="<?/*=active_link_controller('register_client') */?>">
-                    <a href="<?/*=site_url('admin/client/company/outlet/add'); */?>">
+                <!--<li class="<? /*=active_link_controller('register_client') */ ?>">
+                    <a href="<? /*=site_url('admin/client/company/outlet/add'); */ ?>">
                         <i class="fa fa-user"></i>
-                        <span><?/*=lang('menu_outlet_register'); */?></span>
+                        <span><? /*=lang('menu_outlet_register'); */ ?></span>
                     </a>
-                </li>-->            
+                </li>-->
             <?php endif; ?>
             <?php if ($user_data->user_type == 'a'): ?>
                 <li class="<?= active_link_controller('assign_balance') ?>">
@@ -74,18 +74,18 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                 echo site_url('admin/system/users'); ?>"> <i class="fa fa-shield"></i> <span><?php /* */
                         echo lang('menu_users_admin'); ?></span> </a>
             </li>
-            <?php if($user_data->user_type == 'a'): ?>
-            <li class="<?= active_link_controller('users_controller') ?>">
-                <a href="<?php /* */
+            <?php if ($user_data->user_type == 'a'): ?>
+                <li class="<?= active_link_controller('users_controller') ?>">
+                    <a href="<?php /* */
                 echo site_url('admin/client/users'); ?>"> <i class="fa fa-shield"></i> <span><?php /* */
                         echo ($user_data->user_type == 'a') ? lang('menu_users_clients') : lang('menu_users_outlets'); ?></span>
-                </a>
-            </li>
+                    </a>
+                </li>
 
-            <li class="<?= active_link_controller('client_controller') ?>"><a href="<?php /* */
+                <li class="<?= active_link_controller('client_controller') ?>"><a href="<?php /* */
                 echo site_url('admin/user/add'); ?>"> <i class="fa fa-shield"></i> <span><?php /* */
-                        echo lang('menu_user_add'); ?></span> </a>
-            </li>
+                            echo lang('menu_user_add'); ?></span> </a>
+                </li>
             <?php endif; ?>
             <!-- Setup menu --> <?php /* */
             if ($user_data->user_type == 'a'): ?>

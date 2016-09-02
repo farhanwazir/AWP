@@ -17,8 +17,10 @@
                             <div class="info-box-content">
                                 <span class="info-box-text"><?= lang('service_airtime_master_balance'); ?></span>
                                 <span class="info-box-number">$<?= number_format($balance->balance, 2); ?></span>
-                            </div> <!-- /.info-box-content -->
-                        </div> <!-- /.info-box -->
+                            </div>
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
                     </div>
                     <div class="col-md-6">
                         <div class="box">

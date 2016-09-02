@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             $this->load->view('admin/reports/partials/filters.php'); ?><?php /* */
                         endif; ?>
                         <script>
-                            function before_load_data(res){
+                            function before_load_data(res) {
                                 console.log(res.summary);
                                 $('#consumed-balance-status').html(res.summary.consumed_balance);
                                 $('#available-balance-status').html(res.summary.total_available_balance);
@@ -46,6 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             <div class="col-md-4">
                                 <div class="callout callout-info lead">
                                     <h4>Consumed balance</h4>
+
                                     <p id="consumed-balance-status">
                                     </p>
                                 </div>
@@ -53,6 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             <div class="col-md-4">
                                 <div class="callout callout-success lead">
                                     <h4>Available balance</h4>
+
                                     <p id="available-balance-status">
 
                                     </p>

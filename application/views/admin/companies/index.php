@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                     <th data-field="created_at"
                                         data-sortable="true"
-                                        data-order="desc"><?=lang('common_created_at');?></th>
+                                        data-order="desc"><?= lang('common_created_at'); ?></th>
 
                                     <th data-field="actions_col" data-formatter="add_actions" data-events="add_actions_events"></th>
 
@@ -187,7 +187,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                     <th data-field="created_at"
                                         data-sortable="true"
-                                        data-order="desc"><?=lang('common_created_at');?></th>
+                                        data-order="desc"><?= lang('common_created_at'); ?></th>
 
                                     <th data-field="actions_col" data-formatter="add_actions_restore" data-events="add_actions_restore_events"></th>
 

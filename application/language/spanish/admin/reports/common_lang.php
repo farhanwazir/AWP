@@ -20,7 +20,7 @@ $lang['common_report_col_profit_fraction']             = 'Fracción de lucro';
 
 $lang['common_report_col_profit']             = 'Estrella ganan';
 
-$lang['common_report_col_company_profit']             = 'Importe pagado';
+$lang['common_report_col_company_profit'] = 'Importe pagado';
 
 $lang['common_report_col_created_at']             = 'Transacción de';
 

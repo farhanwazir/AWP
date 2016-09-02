@@ -77,28 +77,28 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                                                                 value="<?= lang('users_type_code_admin') ?>"
                                                                                                 data-label-text="<?= lang('users_type_admin') ?>"
                                                                                                 data-size="normal" <?= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_admin')) ? 'checked' : ''; ?>> &nbsp;                                                    <?php endif; ?>
-                        <input type="radio" class="form-control iCheckOff"
-                                         name="user_type"
-                                         value="<?= lang('users_type_code_company') ?>"
-                                         data-label-text="<?= lang('users_type_company') ?>"
-                                         data-size="normal"
-                            <?= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_company')) ?
-                                'checked' : ''; ?>>
+                                                    <input type="radio" class="form-control iCheckOff"
+                                                           name="user_type"
+                                                           value="<?= lang('users_type_code_company') ?>"
+                                                           data-label-text="<?= lang('users_type_company') ?>"
+                                                           data-size="normal"
+                                                        <?= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_company')) ?
+                                                            'checked' : ''; ?>>
                                                     &nbsp;
                                                     <!--<input type="radio" class="form-control iCheckOff"
                                                            name="user_type"
-                                                           value="<?/*= lang('users_type_code_outlet') */?>"
-                                                           data-label-text="<?/*= lang('users_type_outlet') */?>"
+                                                           value="<? /*= lang('users_type_code_outlet') */ ?>"
+                                                           data-label-text="<? /*= lang('users_type_outlet') */ ?>"
                                                            data-size="normal"
-                                                        <?/*= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_outlet')) ? 'checked' : ''; */?>>
+                                                        <? /*= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_outlet')) ? 'checked' : ''; */ ?>>
                                                     &nbsp; <?php /* */
                                                     if ($user_data->user_type == 'a'): ?>
                                                         <input type="radio" class="form-control iCheckOff"
                                                                name="user_type"
                                                                value="<?= lang('users_type_code_star') ?>"
                                                                data-label-text="<?= lang('users_type_star') ?>"
-                                                               data-size="normal" <?= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_star')) ? 'checked' : ''; ?>>     -->                                               <?php /* */
-                                                    endif; ?>                                                </div>
+                                                               data-size="normal" <?= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_star')) ? 'checked' : ''; ?>>     --> <?php /* */
+                                                endif; ?>                                                </div>
                                             </div>
                                         </div>
                                     </div>

@@ -69,7 +69,6 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                             params.bar_code = barcode;
                                             return params;
                                         }
-                                        ;
                                         function refresh_table() {
                                             data_url = "<?=base_url()?><?=$table_data_ajax_path; ?>";
                                             if (company_id == 'None') {
@@ -85,10 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                 getCurrentCompanyBalance();
                                             }
                                         }
-                                        ;
                                         function getCurrentCompanyBalance() {
                                             $('#company-current-balance').html('Loading...');
-                                            ;
                                             ajaxRequest("<?=base_url().$company_current_balance_url?>", {
                                                 <?php /* */ if($user_data->user_type != 'a'): ?>outlet_id<?php /* */ else: ?>company_id<?php /* */ endif; ?>: company_id,
                                                 bar_code: barcode
@@ -101,7 +98,6 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                 }
                                             }, false);
                                         }
-                                        ;
                                         function getCurrentAdminBalance() {
                                             $('#admin-current-balance').html('Loading...');
                                             ajaxRequest("<?=base_url().$master_current_balance_url?>", {bar_code: barcode}, {
@@ -113,7 +109,6 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                 }
                                             }, false);
                                         }
-                                        ;
                                         $(document).ready(function () {
                                             company_id = $('[name="filters[company_id]"]').val();
                                             barcode = $('[name="filters[category_id]"]').val();
