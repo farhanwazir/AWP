@@ -12,9 +12,9 @@ $lang['common_description']           = 'Descripción';
 
 $lang['common_price']           = 'Precio';
 
-$lang['common_barcode']           = 'Código de barras';
+$lang['common_barcode']           = 'SKU';
 
-$lang['common_profit_fraction']           = 'Fración de gananacias';
+$lang['common_profit_fraction']           = '% Ganancia';
 
 $lang['common_type']           = 'Tipo';
 
@@ -34,7 +34,7 @@ $lang['common_confirm_password']           = 'Confirmar Contraseña';
 
 $lang['common_category']           = 'Categoría';
 
-$lang['common_created_at']           = 'Creado en';
+$lang['common_created_at']           = 'Fecha de alta';
 
 $lang['common_submit']           = 'Enviar';
 

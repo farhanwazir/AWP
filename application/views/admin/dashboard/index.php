@@ -9,34 +9,36 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box"><span class="info-box-icon bg-maroon"><i class="fa fa-legal"></i></span>
 
-                    <div class="info-box-content"><span class="info-box-text">Licence</span> <span
+                    <div class="info-box-content"><span class="info-box-text">Licencia</span> <span
                             class="info-box-number">Springlabs</span></div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box"><span class="info-box-icon bg-green"><i class="fa fa-check"></i></span>
 
-                    <div class="info-box-content"><span class="info-box-text">Panel version</span> <span
+                    <div class="info-box-content"><span class="info-box-text">Versión</span> <span
                             class="info-box-number">1.2.1</span></div>
                 </div>
             </div>
-            <div class="clearfix visible-sm-block"></div>
+            <!--<div class="clearfix visible-sm-block"></div>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span>
 
-                    <div class="info-box-content"><span class="info-box-text">Users</span> <span
-                            class="info-box-number"><?php /* */
-                            echo 0; ?></span></div>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Usuarios</span>
+                        <span class="info-box-number"><?php /*echo 0; */?></span>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box"><span class="info-box-icon bg-aqua"><i class="fa fa-shield"></i></span>
 
-                    <div class="info-box-content"><span class="info-box-text">Security groups</span> <span
-                            class="info-box-number"><?php /* */
-                            echo 0; ?></span></div>
+                    <div class="info-box-content">
+                        <span class="info-box-text">Grupos de seguridad</span>
+                        <span class="info-box-number"><?php /*echo 0; */?></span>
+                    </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
 </div>

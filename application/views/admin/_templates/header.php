@@ -73,6 +73,8 @@
     <script src="<?php
     echo base_url($frameworks_dir . '/bootstrap-table/bootstrap-table.js'); ?>"></script>
     <script src="<?php
+    echo base_url($frameworks_dir . '/bootstrap-table/locale/bootstrap-table-es-MX.js'); ?>"></script>
+    <script src="<?php
     echo base_url($frameworks_dir . '/bootstrap-table/extensions/export/bootstrap-table-export.js'); ?>"></script>
     <!-- End Bootstrap table --></head>
 <body class="hold-transition skin-blue fixed sidebar-mini"><?php

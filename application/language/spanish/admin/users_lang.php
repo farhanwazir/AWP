@@ -36,7 +36,7 @@ $lang['users_address']         = 'Dirección';
 
 $lang['users_outlet']         = 'Punto de Venta';
 
-$lang['users_register']         = 'Registro de usuario';
+$lang['users_register']         = 'Registro de nuevo usuario';
 
 $lang['users_create_user']         = 'Crear usuario';
 
@@ -48,7 +48,7 @@ $lang['users_all_client_users']         = 'Todos los usuarios';
 
 $lang['users_all_admin_users']         = 'Todos los usuarios administradores';
 
-$lang['users_company_users']         = 'Usuarios de la compañía';
+$lang['users_company_users']         = 'Usuarios de la empresa';
 
 $lang['users_star_users']         = 'Estrellas usuarios';
 
@@ -56,7 +56,7 @@ $lang['users_star_users']         = 'Estrellas usuarios';
 
 $lang['users_type']           = 'Tipo de usuario';
 
-$lang['users_type_admin']           = 'Adminastrador';
+$lang['users_type_admin']           = 'Administrador';
 
 $lang['users_type_company']           = 'Empresa';
 

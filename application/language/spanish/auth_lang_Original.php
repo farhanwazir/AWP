@@ -46,7 +46,7 @@ $lang['error_csrf'] = 'Este formulario de envío no pasó el control de segurida
 
 $lang['login_heading']         = 'Ingresar';
 
-$lang['login_subheading']      = 'Ingrese con su usuario y contraseña.';
+$lang['login_subheading']      = 'Ingrese usuario y contraseña.';
 
 $lang['login_identity_label']  = 'Email:';
 
@@ -100,7 +100,7 @@ $lang['deactivate_confirm_n_label']          = 'No:';
 
 $lang['deactivate_submit_btn']               = 'Enviar';
 
-$lang['deactivate_validation_confirm_label'] = 'confirmación';
+$lang['deactivate_validation_confirm_label'] = 'Confirmación';
 
 $lang['deactivate_validation_user_id_label'] = 'ID de Usuario';
 
@@ -112,7 +112,7 @@ $lang['create_user_heading']                           = 'Nuevo Usuario';
 
 $lang['create_user_subheading']                        = 'Ingrese los datos del usuario.';
 
-$lang['create_user_fname_label']                       = 'Nombres:';
+$lang['create_user_fname_label']                       = 'Nombre:';
 
 $lang['create_user_lname_label']                       = 'Apellidos:';
 
@@ -128,7 +128,7 @@ $lang['create_user_password_confirm_label']            = 'Confirme Contraseña:'
 
 $lang['create_user_submit_btn']                        = 'Crear Usuario';
 
-$lang['create_user_validation_fname_label']            = 'Nombres';
+$lang['create_user_validation_fname_label']            = 'Nombre';
 
 $lang['create_user_validation_lname_label']            = 'Apellidos';
 
@@ -150,7 +150,7 @@ $lang['edit_user_heading']                           = 'Editar Usuario';
 
 $lang['edit_user_subheading']                        = 'Ingrese los datos del usuario.';
 
-$lang['edit_user_fname_label']                       = 'Nombres:';
+$lang['edit_user_fname_label']                       = 'Nombre:';
 
 $lang['edit_user_lname_label']                       = 'Apellidos:';
 

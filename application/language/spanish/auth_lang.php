@@ -34,7 +34,7 @@ $lang['auth_your_password']   = 'Contraseña';
 
 $lang['auth_remember_me']     = 'Recordar datos';
 
-$lang['auth_forgot_password'] = '¿Olvidaste tu constraseña?';
+$lang['auth_forgot_password'] = '¿Olvidaste tu contraseña?';
 
 $lang['auth_new_member']      = 'Registro';
 

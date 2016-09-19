@@ -94,7 +94,7 @@ $lang['menu_search'] = 'Buscar';
 
 
 
-/* * */$lang['menu_client']                     = 'Menú de cliente';
+/* * */$lang['menu_client']                     = 'Menú Clientes';
 
 /* ****** */$lang['menu_client_list']             = 'Clientes';
 
@@ -104,17 +104,17 @@ $lang['menu_search'] = 'Buscar';
 
 /* ****** */$lang['menu_stars_list']             = 'Estrellas';
 
-/* ****** */$lang['menu_client_register']             = 'Registrar nuevo cliente';
+/* ****** */$lang['menu_client_register']             = 'Registrar nueva compañía';
 
 /* ****** */$lang['menu_outlet_register']             = 'Register nuevo punto de venta';
 
-/* ****** */$lang['menu_client_assign_balance']             = 'Asignar tiempo en el aire';
+/* ****** */$lang['menu_client_assign_balance']             = 'Asignar tiempo aire a clientes';
 
-/* ****** */$lang['menu_client_assign_chip']             = 'Asignar los chips';
+/* ****** */$lang['menu_client_assign_chip']             = 'Asignar chips a clientes';
 
 
 
-/* * */$lang['menu_users']                     = 'Menú del usuario';
+/* * */$lang['menu_users']                     = 'Menú Usuarios';
 
 /* ****** */$lang['menu_users_admin']             = 'Administradores';
 
@@ -122,7 +122,7 @@ $lang['menu_search'] = 'Buscar';
 
 /* ************ */$lang['menu_users_admin_add']             = 'Añadir un nuevo admin';
 
-/* ****** */$lang['menu_users_clients']             = 'Usuarios de los clientes';
+/* ****** */$lang['menu_users_clients']             = 'Usuarios por compañia';
 
 /* ****** */$lang['menu_users_outlets']             = 'Puntos de venta del usuario';
 
@@ -130,17 +130,17 @@ $lang['menu_search'] = 'Buscar';
 
 /* ************ */$lang['menu_users_clients_add']             = 'Añadir usuario del cliente';
 
-/* ************ */$lang['menu_user_add']             = 'Agregar usuario';
+/* ************ */$lang['menu_user_add']             = 'Agregar usuarios';
 
 
 
-/* * */$lang['menu_setup']                     = 'Menú de configuración del sistema';
+/* * */$lang['menu_setup']                     = 'Menú configuración del sistema';
 
 /* ****** */$lang['menu_categories']             = 'Categorías';
 
-/* ************ */$lang['menu_categories_list']             = 'Todas las categorias';
+/* ************ */$lang['menu_categories_list']             = 'Todas las categorías';
 
-/* ************ */$lang['menu_categories_add']             = 'Añadir nueva categoria';
+/* ************ */$lang['menu_categories_add']             = 'Añadir nueva categoría';
 
 /* ****** */$lang['menu_services']             = 'Servicios';
 
@@ -148,47 +148,45 @@ $lang['menu_search'] = 'Buscar';
 
 /* ************ */$lang['menu_services_add']             = 'Agregar nuevo servicio';
 
-/* ****** */$lang['menu_products']             = 'Productos';
+/* ****** */$lang['menu_products']             = 'Chips';
 
-/* ************ */$lang['menu_products_list']             = 'Todos los productos';
+/* ************ */$lang['menu_products_list']             = 'Todos los Chips';
 
-/* ************ */$lang['menu_products_add']             = 'Agregar nuevo producto';
+/* ************ */$lang['menu_products_add']             = 'Agregar nuevo Chip';
 
-/* ************ */$lang['menu_products_bulk']             = 'Añadir productos a granel';
-
-
-
-/* ****** */$lang['menu_airtime_setup']             = 'Configuración de tiempo en el aire';
-
-/* ****** */$lang['menu_commission_setup']             = 'Comisión de configuración';
+/* ************ */$lang['menu_products_bulk']             = 'Añadir Inventario de Chips';
 
 
 
-/* * */$lang['menu_reports']                     = 'Informes Menú';
+/* ****** */$lang['menu_airtime_setup']             = 'Tiempo aire Auricell';
 
-/* ****** */$lang['menu_history_airtime']             = 'Historia de tiempo de uso';
+/* ****** */$lang['menu_commission_setup']             = 'Configurar comisión';
+
+
+
+/* * */$lang['menu_reports']                     = 'Menú Reportes';
+
+/* ****** */$lang['menu_history_airtime']             = 'Reporte Recargas TA';
 
 /* ****** */$lang['menu_reports_stats']             = 'Informes y estadísticas de menú';
 
-/* ****** */$lang['menu_sales_report']             = 'Informe de ventas por cliente';
+/* ****** */$lang['menu_sales_report']             = 'Reporte ventas por cliente';
 
-/* ****** */$lang['menu_reports_conciliation']             = 'Informes de conciliación';
+/* ****** */$lang['menu_reports_conciliation']             = 'Reporte conciliación';
 
-/* ****** */$lang['menu_reports_star_conciliation']             = 'Conciliación, de la estrella';
+/* ****** */$lang['menu_reports_star_conciliation']             = 'Reporte venta por estrella';
 
-/* ****** */
-$lang['menu_reports_company_conciliation'] = 'Conciliación, de cliente';
+/* ****** */$lang['menu_reports_company_conciliation']             = 'Reporte conciliación por cliente';
 
-/* ****** */
-$lang['menu_reports_company_chips_conciliation'] = 'Conciliación de ventas';
+/* ****** */$lang['menu_reports_company_chips_conciliation'] = 'Conciliación de ventas';
 
-/* ****** */$lang['menu_reports_all_stars_sale']             = 'Detalle del informe de ventas estrellas';
+/* ****** */$lang['menu_reports_all_stars_sale']             = 'Reporte detallado de ventas por estrella';
 
-/* ****** */$lang['menu_reports_airtime_sale']             = 'Informe de ventas de tiempo aire';
+/* ****** */$lang['menu_reports_airtime_sale']             = 'Reporte ventas de TA';
 
-/* ****** */$lang['menu_reports_chips_sale']             = 'Informe de virutas de ventas';
+/* ****** */$lang['menu_reports_chips_sale']             = 'Reporte venta de chips';
 
-/* ****** */$lang['menu_reports_portability']             = 'Informe de Portabilidad';
+/* ****** */$lang['menu_reports_portability']             = 'Reporte de Portabilidad';
 
 
 

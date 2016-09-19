@@ -2,11 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <footer class="main-footer">
     <div class="pull-right hidden-xs"><b><?php /* */
-            echo lang('footer_version'); ?></b> 0.7.1
+            echo lang('footer_version'); ?></b> 1.2.1
     </div>
     <strong><?php /* */
-        echo lang('footer_copyright'); ?> &copy; 2014-<?php /* */
-        echo date('Y'); ?> <a href="http://springlabs.com.mx" target="_blank">SpringLabs</a>.</strong> <?php /* */
+        echo lang('footer_copyright'); ?> &copy; <?php echo date('Y'); ?> <a href="http://springlabs.com.mx" target="_blank">SpringLabs</a>.</strong> <?php /* */
     echo lang('footer_all_rights_reserved'); ?>.
 </footer></div>
 <script src="<?php /* */
@@ -47,7 +46,8 @@ echo base_url($plugins_dir . '/icheck/js/icheck.min.js'); ?>"></script>
                 new PNotify({title: 'Table remote data', text: 'data: ' + data, type: 'error'});
             }
         });
-        jQuery.fn.bootstrapTable.defaults = {sortOrder: 'desc'};
+        $.fn.bootstrapTable.defaults = {sortOrder: 'desc'};
+        $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['es-MX']);
         /*$('.bs-tbl').on('all.bs.table', function (e, name, args) {         console.log(name, args);         });*/
     });</script>
 <script src="<?php /* */

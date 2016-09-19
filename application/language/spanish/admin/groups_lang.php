@@ -22,11 +22,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-$lang['groups_name']        = 'Nombew';
+$lang['groups_name']        = 'Nombre';
 
 $lang['groups_description'] = 'Descripción';
 
-$lang['groups_action']      = 'Acciṕn';
+$lang['groups_action']      = 'Acción';
 
 $lang['groups_edit_group']  = 'Editar grupo';
 

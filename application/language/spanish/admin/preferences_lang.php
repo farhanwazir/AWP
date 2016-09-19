@@ -34,7 +34,7 @@ $lang['prefs_notifications_menu'] = 'Menú de notificaciones';
 
 $lang['prefs_tasks_menu']         = 'Menú Tareas';
 
-$lang['prefs_user_menu']          = 'Menú del Usuario';
+$lang['prefs_user_menu']          = 'Menú Usuarios';
 
 $lang['prefs_ctrl_sidebar']       = 'Barra lateral de control';
 

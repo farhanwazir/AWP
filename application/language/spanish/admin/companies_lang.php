@@ -6,9 +6,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['company_add']         = 'Añadir nueva empresa';
 
-$lang['company_register']         = 'Registrar la compañía';
+$lang['company_register']         = 'Registrar nueva empresa';
 
-$lang['company_edit']         = 'Editar compañía';
+$lang['company_edit']         = 'Editar empresa';
 
 $lang['company']  = 'Empresa';
 
@@ -28,15 +28,15 @@ $lang['company_no_outlets']  = 'No. de Puntos de Venta';
 
 $lang['company_customer_type']           = 'Tipo';
 
-$lang['company_customer_type_wholesale']           = 'Venta al por mayor';
+$lang['company_customer_type_wholesale']           = 'Mayorista';
 
-$lang['company_customer_type_commission']           = 'Comisión';
+$lang['company_customer_type_commission']           = 'Comisionista';
 
 $lang['company_customer_type_direct']           = 'Directo';
 
 
 
-$lang['company_rfc']           = 'RFC#';
+$lang['company_rfc']           = 'RFC';
 
 $lang['company_rfc_type']           = 'Tipo de RFC';
 
