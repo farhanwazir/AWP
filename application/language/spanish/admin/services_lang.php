@@ -12,7 +12,7 @@ $lang['service_category']         = 'Categoría';
 
 $lang['service_airtime_master_balance']         = 'Saldo disponible';
 
-$lang['service_airtime_company_master_balance']         = 'Compañía Saldo actual';
+$lang['service_airtime_company_master_balance']         = 'Saldo Actual Del Cliente';
 
 $lang['service_airtime_outlet_master_balance']         = 'Outlet Saldo actual';
 

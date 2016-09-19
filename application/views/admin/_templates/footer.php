@@ -32,6 +32,9 @@ echo base_url($plugins_dir . '/daterangepicker/moment.js'); ?>"></script>
 echo base_url($plugins_dir . '/daterangepicker/daterangepicker.js'); ?>"></script>
 <script src="<?php /* */
 echo base_url($plugins_dir . '/icheck/js/icheck.min.js'); ?>"></script>
+<script src="<?php /* */
+echo base_url($plugins_dir . '/bootstrap-switch/js/bootstrap-switch.min.js'); ?>"></script><!-- Bootstrap-table data export -->
+
 <script>    $(document).ready(function () {
         !$('input:not(".iCheckOff"):not("[data-field]")').iCheck({
             checkboxClass: 'icheckbox_flat-blue',
@@ -48,10 +51,10 @@ echo base_url($plugins_dir . '/icheck/js/icheck.min.js'); ?>"></script>
         });
         $.fn.bootstrapTable.defaults = {sortOrder: 'desc'};
         $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['es-MX']);
+        $.fn.bootstrapSwitch.defaults.onText = '1';
+        $.fn.bootstrapSwitch.defaults.offText = '0';
         /*$('.bs-tbl').on('all.bs.table', function (e, name, args) {         console.log(name, args);         });*/
     });</script>
-<script src="<?php /* */
-echo base_url($plugins_dir . '/bootstrap-switch/js/bootstrap-switch.min.js'); ?>"></script><!-- Bootstrap-table data export -->
 <script src="<?php /* */
 echo base_url($plugins_dir . '/tableExport/tableExport.js'); ?>"></script><!--Export table dependency of bootstrap-table -->
 <script src="<?php /* */

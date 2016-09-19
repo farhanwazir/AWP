@@ -98,13 +98,13 @@ $lang['menu_search'] = 'Buscar';
 
 /* ****** */$lang['menu_client_list']             = 'Clientes';
 
-/* ****** */$lang['menu_companies_list']             = 'Compañías';
+/* ****** */$lang['menu_companies_list']             = 'Clientes';
 
 /* ****** */$lang['menu_outlets_list']             = ' Outlets';
 
 /* ****** */$lang['menu_stars_list']             = 'Estrellas';
 
-/* ****** */$lang['menu_client_register']             = 'Registrar nueva compañía';
+/* ****** */$lang['menu_client_register']             = 'Registrar nueva cliente';
 
 /* ****** */$lang['menu_outlet_register']             = 'Register nuevo punto de venta';
 
