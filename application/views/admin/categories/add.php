@@ -72,7 +72,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="submit" value="submit" class="btn btn-default btn-lg"/></form>
+                                    <input type="submit" value="<?= lang('common_submit'); ?>"
+                                           class="btn btn-default btn-lg"/></form>
                             </div>
                         </div>
                     </div>

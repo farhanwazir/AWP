@@ -30,17 +30,17 @@
                                        data-sort-order="desc">
                                     <thead>
                                     <th data-field="transaction_id"><?= lang('common_report_col_transaction_id'); ?></th>
-                                    <th data-field="company_code"><?= lang('common_user_type_company'); ?></th>
-                                    <th data-field="outlet_code"><?= lang('common_user_type_outlet'); ?></th>
-                                    <th data-field="response_code"><?= lang('common_report_col_response'); ?></th>
-                                    <th data-field="star_id"><?= lang('common_user_type_star'); ?></th>
+                                    <th data-field="company_code"><?= lang('common_report_col_conciliation_company_code'); ?></th>
+                                    <th data-field="outlet_code"><?= lang('common_report_col_conciliation_outlet_code'); ?></th>
+                                    <th data-field="response_code"><?= lang('common_report_col_conciliation_response'); ?></th>
+                                    <th data-field="star_id"><?= lang('common_report_col_conciliation_star'); ?></th>
                                     <th data-field="operator"><?= lang('common_report_col_operator'); ?></th>
                                     <th data-field="bar_code"><?= lang('common_report_col_product_id'); ?></th>
                                     <th data-field="qty"><?= lang('common_report_col_qty'); ?></th>
                                     <th data-field="description"><?= lang('common_description'); ?></th>
-                                    <th data-field="cost"><?= lang('common_per_unit_cost'); ?></th>
+                                    <th data-field="cost"><?= lang('common_report_col_conciliation_unit_cost'); ?></th>
                                     <th data-field="sale_amount"><?= lang('common_report_col_sale_amount'); ?></th>
-                                    <th data-field="amount_paid"><?= lang('common_report_col_company_profit'); ?></th>
+                                    <th data-field="amount_paid"><?= lang('common_report_col_conciliation_company_profit'); ?></th>
                                     <th data-field="created_at"><?= lang('common_report_col_created_at'); ?></th>
                                     </thead>
                                 </table>

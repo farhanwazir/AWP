@@ -104,7 +104,8 @@ $lang['menu_search'] = 'Buscar';
 
 /* ****** */$lang['menu_stars_list']             = 'Estrellas';
 
-/* ****** */$lang['menu_client_register']             = 'Registrar nueva cliente';
+/* ****** */
+$lang['menu_client_register'] = 'Agregar nuevo cliente';
 
 /* ****** */$lang['menu_outlet_register']             = 'Register nuevo punto de venta';
 
@@ -172,15 +173,20 @@ $lang['menu_search'] = 'Buscar';
 
 /* ****** */$lang['menu_sales_report']             = 'Reporte ventas por cliente';
 
-/* ****** */$lang['menu_reports_conciliation']             = 'Reporte conciliación';
+/* ****** */
+$lang['menu_reports_conciliation'] = 'Reporte de conciliación';
 
-/* ****** */$lang['menu_reports_star_conciliation']             = 'Reporte venta por estrella';
+/* ****** */
+$lang['menu_reports_star_conciliation'] = 'Reporte de Conciliación por estrella';
 
-/* ****** */$lang['menu_reports_company_conciliation']             = 'Reporte conciliación por cliente';
+/* ****** */
+$lang['menu_reports_company_conciliation'] = 'Reporte de conciliación por cliente';
 
-/* ****** */$lang['menu_reports_company_chips_conciliation'] = 'Conciliación de ventas';
+/* ****** */
+$lang['menu_reports_company_chips_conciliation'] = 'Reporte de Conciliación Chips';
 
-/* ****** */$lang['menu_reports_all_stars_sale']             = 'Reporte detallado de ventas por estrella';
+/* ****** */
+$lang['menu_reports_all_stars_sale'] = 'Historial de Tiempo Aire'; /*'Reporte de Ventas';*/
 
 /* ****** */$lang['menu_reports_airtime_sale']             = 'Reporte ventas de TA';
 

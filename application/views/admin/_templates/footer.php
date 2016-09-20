@@ -49,10 +49,8 @@ echo base_url($plugins_dir . '/bootstrap-switch/js/bootstrap-switch.min.js'); ?>
                 new PNotify({title: 'Table remote data', text: 'data: ' + data, type: 'error'});
             }
         });
-        $.fn.bootstrapTable.defaults = {sortOrder: 'desc'};
+        /*$.fn.bootstrapTable.defaults = {sortOrder: 'desc'};*/
         $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['es-MX']);
-        $.fn.bootstrapSwitch.defaults.onText = '1';
-        $.fn.bootstrapSwitch.defaults.offText = '0';
         /*$('.bs-tbl').on('all.bs.table', function (e, name, args) {         console.log(name, args);         });*/
     });</script>
 <script src="<?php /* */

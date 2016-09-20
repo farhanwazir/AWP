@@ -13,8 +13,7 @@ $lang['product_sold']         = 'Vendido';
 $lang['product_category']  = 'SKU';
 
 
-
-$lang['product_add_bulk']  = 'Agregar inventario de chips';
+$lang['product_add_bulk'] = 'Cargar Inventario de chips';
 
 $lang['product_file_upload']  = 'Archivo <small>(Sólo archivo xls/xlsx es permitido)</small>';
 
@@ -23,8 +22,7 @@ $lang['product_file_upload']  = 'Archivo <small>(Sólo archivo xls/xlsx es permi
 $lang['product_chips_master_stock']  = 'Chips disponibles';
 
 
-
-$lang['product_chips_company_master_stock']  = 'Chips disponibles en cuenta maestra';
+$lang['product_chips_company_master_stock'] = 'Chips asignados al cliente';
 
 $lang['product_chips_outlet_master_stock']  = 'Chips para tienda';
 
@@ -37,7 +35,14 @@ $lang['product_outlet_not_selected']  = 'La venta no se pudo concretar';
 $lang['product_product_not_selected']  = 'No se ha seleccionado el producto';
 
 
+$lang['product_chips_assign_form'] = 'Seleccionar Cliente y tipo de chips';
 
-$lang['product_chips_assign_form']  = 'Cantidad a transferir';
+$lang['product_chips_assign_transfer_form'] = 'Cantidad a Transferir';
 
 $lang['product_chips_assign_outlet_form']  = 'Transferir a la venta';
+
+$lang['product_chips_old_stock'] = 'Total chips anterior';
+
+$lang['product_chips_stock'] = 'Total chips';
+
+$lang['product_chips_transaction_amount'] = 'Chips transferidos';

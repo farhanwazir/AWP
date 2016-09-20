@@ -117,8 +117,14 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     <input type="submit" value="<?= lang('common_update'); ?>"
                                            class="btn btn-default btn-lg"/></form>
                                 <script>                                    $(document).ready(function () {
-                                        $("[name='customer_type']").bootstrapSwitch();
-                                        $("[name='rfc_type']").bootstrapSwitch();
+                                        $("[name='customer_type']").bootstrapSwitch({
+                                            'onText': '<?=lang('common_switch_on_label') ?>',
+                                            'offText': '<?=lang('common_switch_off_label') ?>'
+                                        });
+                                        $("[name='rfc_type']").bootstrapSwitch({
+                                            'onText': '<?=lang('common_switch_on_label') ?>',
+                                            'offText': '<?=lang('common_switch_off_label') ?>'
+                                        });
                                     });                                </script>
                             </div>
                         </div>

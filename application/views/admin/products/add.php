@@ -113,7 +113,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="submit" value="submit" class="btn btn-default btn-lg"/>
+                                    <input type="submit" value="<?= lang('common_upload'); ?>"
+                                           class="btn btn-default btn-lg"/>
                                 </form>
                             </div>
                         </div>

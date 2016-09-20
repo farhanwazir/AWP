@@ -53,7 +53,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                        data-show-columns="true"
 
                                        data-show-export="true"
-                                       data-sort-order="desc">
+                                       data-sort-order="desc"
+                                       data-search="true"
+                                       data-search-on-enter-key="true">
 
                                     <thead>
 

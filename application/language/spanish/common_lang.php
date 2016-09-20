@@ -3,8 +3,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-
-$lang['common_report_filter']           = 'Filtro de informe';
+$lang['common_report_filter'] = 'Filtro de búsqueda';
 
 $lang['common_title']           = 'Titulo';
 
@@ -54,11 +53,15 @@ $lang['common_required']           = '<span style="color: red; font-weight: bold
 
 $lang['common_user_type_admin']           = 'Administrador';
 
-$lang['common_user_type_company']           = 'Compañia';
+$lang['common_user_type_company'] = 'ID Cliente';
 
 $lang['common_user_type_outlet']           = 'Salida';
 
 $lang['common_user_type_star']           = 'Estrella'; //Entrada si se refierian a start
 
-
+$lang['common_switch_on_label'] = '1';
+$lang['common_switch_off_label'] = '0';
+$lang['common_created_at_transfer'] = 'Fecha de transferencia';
+$lang['common_search'] = 'Buscar';
+$lang['common_upload'] = 'Cargar';
 

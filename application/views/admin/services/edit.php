@@ -25,7 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     </div>
                                     <input type="hidden" name="bar_code"
                                            value="<?= isset($_POST['bar_code']) ? $_POST['bar_code'] : ''; ?>"> <input
-                                        type="submit" value="Update" class="btn btn-default btn-lg"/></form>
+                                        type="submit" value="<?= lang('common_update'); ?>"
+                                        class="btn btn-default btn-lg"/></form>
                             </div>
                         </div>
                     </div>

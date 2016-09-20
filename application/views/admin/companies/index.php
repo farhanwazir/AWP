@@ -142,7 +142,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                     <div class="box-header with-border">
 
-                        <h3 class="box-title">Deactivated Companies</h3>
+                        <h3 class="box-title"><?= lang('company_deactive_companies'); ?></h3>
 
                     </div>
 
@@ -154,18 +154,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                 <!-- Content table -->
 
-                                <table id="report-table" class="table table-bordered table-responsive bs-tbl" data-toggle="table"
-
-                                       data-url="<?=base_url()?><?=$table_trashed_data_ajax_path; ?>"
-
+                                <table id="report-table" class="table table-bordered table-responsive bs-tbl"
+                                       data-toggle="table"
+                                       data-url="<?= base_url() ?><?= $table_trashed_data_ajax_path; ?>"
                                        data-pagination="true"
-
                                        data-side-pagination="server"
-
                                        data-data-field="data"
-
                                        data-show-columns="true"
-
                                        data-show-export="true"
                                        data-sort-order="desc">
 

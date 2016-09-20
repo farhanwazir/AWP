@@ -22,6 +22,12 @@ class Users extends Api_model
         $this->endpoint_outlet_user_update = 'api/edit/outlet/user';
         $this->endpoint_star_user_store = 'api/admin/register/company/user';
         $this->endpoint_star_user_update = 'api/edit/company/user';
+
+        $this->endpoint_user_delete = 'api/trash/user';
+        $this->endpoint_user_restore = 'api/restore/user';
+
+        $this->endpoint_admin_trashed_users = 'api/list/trashed/admin/users';
+        $this->endpoint_company_trashed_users = 'api/list/trashed/company/users';
     }
 
     public function getData($data = [])
@@ -63,4 +69,25 @@ class Users extends Api_model
         elseif (isset($data['user_type']) && $data['user_type'] == 'a') $output = $this->endpoint_admin_user_update;
         return $output;
     }
+
+    public function trash($data = [])
+    {
+        return $this->update($this->endpoint_user_delete, $data);
+    }
+
+    public function restore($data = [])
+    {
+        return $this->update($this->endpoint_user_restore, $data);
+    }
+
+    public function getDeletedUsersCompany($data = [])
+    {
+        return $this->get($this->endpoint_company_trashed_users, $data);
+    }
+
+    public function getDeletedUsersAdmin($data = [])
+    {
+        return $this->get($this->endpoint_admin_trashed_users, $data);
+    }
+
 }

@@ -44,6 +44,7 @@ $lang['company_rfc_type_moral']           = 'Persona moral';
 
 $lang['company_rfc_type_physical']           = 'Persona física';
 
+$lang['company_deactive_companies'] = 'Empresas Desactivadas';
 
 
 /**

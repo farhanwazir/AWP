@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     <th data-field="transaction_id"><?= lang('common_report_col_transaction_id'); ?></th>
                                     <th data-field="company_name"><?= lang('common_report_col_company_name'); ?></th>
                                     <th data-field="product_type"><?= lang('common_report_col_transaction_type'); ?></th>
-                                    <th data-field="sale_amount"><?= lang('common_report_col_sale_amount'); ?></th>
+                                    <th data-field="sale_amount"><?= lang('common_report_col_qty'); ?></th>
                                     <th data-field="created_at"><?= lang('common_report_col_created_at'); ?></th>
                                     </thead>
                                 </table>

@@ -79,7 +79,8 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                             </div>
                                         </div>
                                     </div>
-                                    <input type="submit" value="Update" class="btn btn-default btn-lg"/></form>
+                                    <input type="submit" value="<?= lang('common_update'); ?>"
+                                           class="btn btn-default btn-lg"/></form>
                             </div>
                         </div>
                     </div>

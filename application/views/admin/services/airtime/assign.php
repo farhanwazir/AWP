@@ -1,9 +1,10 @@
 <?php /* */
 defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="content-wrapper">
-    <section class="content-header">        <?php /* */
-        echo $pagetitle; ?><?php /* */
-        echo $breadcrumb; ?>    </section>
+    <section class="content-header">
+        <?php echo $pagetitle; ?>
+        <?php echo $breadcrumb; ?>
+    </section>
     <section class="content">
         <div class="row">
             <div class="col-md-12">                <?php /* */
@@ -161,7 +162,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     <th data-field="user_name"><?= lang('common_report_col_user'); ?></th>
                                     <th data-field="created_at"
                                         data-sortable="true"
-                                        data-order="desc"><?= lang('common_created_at'); ?></th>
+                                        data-order="desc"><?= lang('common_created_at_transfer'); ?></th>
                                     </thead>
                                 </table>
                             </div>

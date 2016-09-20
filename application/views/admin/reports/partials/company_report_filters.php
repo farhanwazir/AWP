@@ -22,7 +22,7 @@
                 <div class="col-xs-12">
                     <div class="pull-right">
                         <button class="btn btn-primary" type="submit"><i
-                                class="glyphicon glyphicon-search fa fa-search"></i> Search
+                                class="glyphicon glyphicon-search fa fa-search"></i> <?= lang('common_search'); ?>
                         </button>
                     </div>
                 </div>

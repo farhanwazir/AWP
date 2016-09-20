@@ -1,13 +1,12 @@
-<?php /* */
-defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="content-wrapper">
-    <section class="content-header">        <?php /* */
-        echo $pagetitle; ?><?php /* */
+    <section class="content-header">        <?php
+        echo $pagetitle; ?><?php
         echo $breadcrumb; ?>    </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-12">                <?php /* */
-                echo $error; ?>                <?php /* */
+            <div class="col-md-12">                <?php
+                echo $error; ?>                <?php
                 echo validation_errors(); ?>
                 <div class="box">
                     <div class="box-body">
@@ -70,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                             <div class="form-group"><label
                                                     for="user_type"><?= lang('users_type') ?></label>
 
-                                                <div>                                                    <?php /* */
+                                                <div>                                                    <?php
                                                     if ($user_data->user_type == 'a'): ?><input type="radio"
                                                                                                 class="form-control iCheckOff"
                                                                                                 name="user_type"
@@ -91,34 +90,34 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                            data-label-text="<? /*= lang('users_type_outlet') */ ?>"
                                                            data-size="normal"
                                                         <? /*= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_outlet')) ? 'checked' : ''; */ ?>>
-                                                    &nbsp; <?php /* */
+                                                    &nbsp; <?php
                                                     if ($user_data->user_type == 'a'): ?>
                                                         <input type="radio" class="form-control iCheckOff"
                                                                name="user_type"
                                                                value="<?= lang('users_type_code_star') ?>"
                                                                data-label-text="<?= lang('users_type_star') ?>"
-                                                               data-size="normal" <?= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_star')) ? 'checked' : ''; ?>>     --> <?php /* */
+                                                               data-size="normal" <?= (isset($_POST['user_type']) && $_POST['user_type'] == lang('users_type_code_star')) ? 'checked' : ''; ?>>     --> <?php
                                                 endif; ?>                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row width-sixty" id="registration-extra-data">
                                         <div class="col-md-6">
-                                            <div class="form-group"><label for="age"><?php /* */
-                                                    if ($user_data->user_type == 'a'): ?><?= lang('users_company'); ?><?php /* */ else: ?><?= lang('users_outlet') ?><?php /* */
-                                                    endif; ?></label> <select name="<?php /* */
-                                                if ($user_data->user_type == 'dc'): ?>outlet_id<?php /* */ else: ?>company_id<?php /* */
+                                            <div class="form-group"><label for="age"><?php
+                                                    if ($user_data->user_type == 'a'): ?><?= lang('users_company'); ?><?php else: ?><?= lang('users_outlet') ?><?php
+                                                    endif; ?></label> <select name="<?php
+                                                if ($user_data->user_type == 'dc'): ?>outlet_id<?php else: ?>company_id<?php
                                                 endif; ?>" id="company-id"
                                                                               class="form-control">                                                    <?= $companies_option ?>                                                </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">                                            <?php /* */
+                                        <div class="col-md-6">                                            <?php
                                             if ($user_data->user_type == 'a'): ?>
                                                 <div class="form-group" id="registration-extra-outlet-data"
                                                      style="display: none;"><label
                                                         for="user_type"><?= lang('users_outlet') ?></label> <select
                                                         name="outlet_id" id="outlet-id" class="form-control"> </select>
-                                                </div>                                            <?php /* */
+                                                </div>                                            <?php
                                             endif; ?>                                        </div>
                                     </div>
                                     <input type="submit" value="<?= lang('common_submit'); ?>"
@@ -126,20 +125,23 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                 <script>                                    user_type = '';
                                     $(document).ready(function () {
                                         $('#registration-extra-data').hide();
-                                        $("[name='user_type']").bootstrapSwitch();
+                                        $("[name='user_type']").bootstrapSwitch({
+                                            'onText': '<?=lang('common_switch_on_label') ?>',
+                                            'offText': '<?=lang('common_switch_off_label') ?>'
+                                        });
                                         $("[name='user_type']").on('switchChange.bootstrapSwitch', function (event, state) {
                                             console.log($(this).val());
                                             user_type = $(this).val();
-                                            if (<?php /* */ if($user_data->user_type == 'a'): ?>$(this).val() == 'dc' || <?php /* */ endif; ?>$(this).val() == 'do') {
+                                            if (<?php if($user_data->user_type == 'a'): ?>$(this).val() == 'dc' || <?php endif; ?>$(this).val() == 'do') {
                                                 $("#registration-extra-data").show();
-                                                <?php /* */ if($user_data->user_type == 'a'): ?>
+                                                <?php if($user_data->user_type == 'a'): ?>
                                                 $("#registration-extra-outlet-data").hide();
-                                                <?php /* */ endif; ?>
+                                                <?php endif; ?>
                                             } else {
                                                 $("#registration-extra-data").hide();
                                             }
                                         });
-                                        <?php /* */ if($user_data->user_type == 'a'): ?>
+                                        <?php if($user_data->user_type == 'a'): ?>
                                         $("#company-id").on('change', function (e) {
                                             if (user_type == 'do') {
                                                 $("#registration-extra-outlet-data").show();
@@ -149,13 +151,13 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                                 $("#registration-extra-outlet-data").hide();
                                             }
                                         });
-                                        <?php /* */ endif; ?>
+                                        <?php endif; ?>
                                         $("#registration-form").submit(function (e) {
                                             e.preventDefault();
-                                            <?php /* */ if($user_data->user_type == 'a'): ?>
+                                            <?php if($user_data->user_type == 'a'): ?>
                                             if (user_type == 'dc' && $('#company-id').val() == 'None') {
                                                 alert("Select company.");
-                                            } else <?php /* */ endif; ?>if (user_type == 'do' && $('#<?php /* */ if($user_data->user_type == 'a'): ?>outlet<?php /* */ else: ?>company<?php /* */ endif; ?>-id').val() == 'None') {
+                                            } else <?php endif; ?>if (user_type == 'do' && $('#<?php if($user_data->user_type == 'a'): ?>outlet<?php else: ?>company<?php endif; ?>-id').val() == 'None') {
                                                 alert("Select outlet.");
                                             } else {
                                                 this.submit();

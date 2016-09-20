@@ -61,5 +61,11 @@ $lang['common_user_type_outlet']           = 'Outlet';
 
 $lang['common_user_type_star']           = 'Star';
 
+$lang['common_switch_on_label'] = '1';
+$lang['common_switch_off_label'] = '0';
+$lang['common_created_at_transfer'] = 'Transferred at';
+$lang['common_search'] = 'Search';
+$lang['common_upload'] = 'Upload';
+
 
 

@@ -211,11 +211,13 @@ $route['admin/users/ajax'] = 'admin/users_controller/getRawData_all';
 $route['admin/system/users'] = 'admin/users_controller/index_admin';
 
 $route['admin/system/users/ajax'] = 'admin/users_controller/getRawData_all_admin';
+$route['admin/system/users/trashed/ajax'] = 'admin/users_controller/getRawData_all_admin_deactivated';
 
 
 $route['admin/client/users'] = 'admin/users_controller/index_client';
 
 $route['admin/client/users/ajax'] = 'admin/users_controller/getRawData_all_client';
+$route['admin/client/users/trashed/ajax'] = 'admin/users_controller/getRawData_all_client_deactivated';
 
 
 $route['admin/user/add'] = 'admin/users_controller/add';
@@ -223,6 +225,9 @@ $route['admin/user/add'] = 'admin/users_controller/add';
 $route['admin/user/store'] = 'admin/users_controller/store';
 
 $route['admin/user/edit'] = 'admin/users_controller/edit';
+
+$route['admin/user/deactivate'] = 'admin/users_controller/inactive_user';
+$route['admin/user/reactivate'] = 'admin/users_controller/reactive_user';
 
 $route['admin/user/update'] = 'admin/users_controller/update';
 

@@ -21,8 +21,7 @@
 defined('BASEPATH') OR exit('No tiene permitido acceder al script');
 
 
-
-$lang['auth_sign_session']    = 'Ingresar como Administrador';
+$lang['auth_sign_session'] = 'Ingresar Usuario y Contraseña';
 
 $lang['auth_sign_facebook']   = 'Ingresar con cuenta Facebook';
 

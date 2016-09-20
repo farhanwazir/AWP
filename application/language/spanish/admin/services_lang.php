@@ -22,7 +22,7 @@ $lang['service_airtime_add_master_balance']         = 'Añadir Saldo a Cuenta Ma
 
 $lang['service_airtime_old_stock']         = 'Saldo Anterior';
 
-$lang['service_airtime_stock']         = 'Saldo Actual';
+$lang['service_airtime_stock'] = 'Saldo total';
 
 $lang['service_airtime_transaction_amount']         = 'Saldo Abonado';
 
@@ -39,4 +39,8 @@ $lang['service_airtime_add_outlet_master_balance']         = 'Transferir a la ve
 $lang['service_company_not_selected']         = 'Ninguna empresa seleccionada';
 
 $lang['service_outlet_not_selected']         = 'Ningún medio seleccionado';
+
+$lang['service_consumed_balance'] = 'Saldo Consumido';
+$lang['service_available_balance'] = 'Saldo Disponible';
+
 

@@ -63,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                         <input type="hidden" name="email"
                                                value="<?= $_POST['email']; ?>">                                        <?php /* */
                                     endif; ?> <input type="hidden" name="user_type" value="<?= $user_type; ?>"> <input
-                                        type="submit" value="<?= lang('common_submit'); ?>"
+                                        type="submit" value="<?= lang('common_update'); ?>"
                                         class="btn btn-default btn-lg"/></form>
                             </div>
                         </div>

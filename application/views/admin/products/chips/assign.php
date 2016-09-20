@@ -141,7 +141,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                     <div class="col-md-4">
                         <div class="box">
                             <div class="box-header with-border"><h3 class="box-title"><?php /* */
-                                    if ($user_data->user_type != 'a'): ?><?= lang('product_chips_assign_outlet_form'); ?><?php /* */ else: ?><?= lang('product_chips_assign_form'); ?><?php /* */
+                                    if ($user_data->user_type != 'a'): ?><?= lang('product_chips_assign_outlet_form'); ?><?php /* */ else: ?><?= lang('product_chips_assign_transfer_form'); ?><?php /* */
                                     endif; ?></h3></div>
                             <div class="box-body">
                                 <div class="row">
@@ -177,12 +177,12 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                        data-data-field="data" data-show-columns="true" data-show-export="true"
                                        data-sort-order="desc">
                                     <thead>
-                                    <th data-field="old_stock"><?= lang('service_airtime_old_stock'); ?></th>
-                                    <th data-field="new_stock"><?= lang('service_airtime_stock'); ?></th>
-                                    <th data-field="amount"><?= lang('service_airtime_transaction_amount'); ?></th>
+                                    <th data-field="old_stock"><?= lang('product_chips_old_stock'); ?></th>
+                                    <th data-field="new_stock"><?= lang('product_chips_stock'); ?></th>
+                                    <th data-field="amount"><?= lang('product_chips_transaction_amount'); ?></th>
                                     <th data-field="created_at"
                                         data-sortable="true"
-                                        data-order="desc"><?= lang('common_created_at'); ?></th>
+                                        data-order="desc"><?= lang('common_created_at_transfer'); ?></th>
                                     </thead>
                                 </table>
                             </div>
