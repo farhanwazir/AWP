@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="callout callout-info lead">
-                                    <h4>Consumed balance</h4>
+                                    <h4><?= lang('service_consumed_balance') ?></h4>
 
                                     <p id="consumed-balance-status">
                                     </p>
@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             </div>
                             <div class="col-md-4">
                                 <div class="callout callout-success lead">
-                                    <h4>Available balance</h4>
+                                    <h4><?= lang('service_available_balance') ?></h4>
 
                                     <p id="available-balance-status">
 
