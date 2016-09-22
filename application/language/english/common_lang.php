@@ -67,5 +67,7 @@ $lang['common_created_at_transfer'] = 'Transferred at';
 $lang['common_search'] = 'Search';
 $lang['common_upload'] = 'Upload';
 
+$lang['common_all'] = 'All';
+
 
 

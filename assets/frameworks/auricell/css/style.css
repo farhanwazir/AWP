@@ -40,3 +40,7 @@
     margin: 0 auto;
     max-width: 50%;
 }
+
+.pwstrength-progressbar {
+    max-height: 5px;
+}

@@ -66,6 +66,9 @@ $lang['users_type_star']           = 'Estrella';
 
 $lang['users_deactive_users'] = 'Usuario Desactivadas';
 
+$lang['users_admin_password'] = 'Administrador contraseña';
+
+$lang['users_change_password'] = 'Contraseña Nueva';
 
 
 

@@ -39,23 +39,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="col-md-12">
 
                                 <!-- Content table -->
-
-                                <table id="report-table" class="table table-bordered table-responsive bs-tbl" data-toggle="table"
-
+                                <table id="report-table"
+                                       class="table table-bordered table-responsive bs-tbl"
+                                       data-toggle="table"
                                        data-url="<?=base_url()?><?=$table_data_ajax_path; ?>"
-
                                        data-pagination="true"
-
                                        data-side-pagination="server"
-
                                        data-data-field="data"
-
                                        data-show-columns="true"
-
                                        data-show-export="true"
                                        data-sort-order="desc"
                                        data-search="true"
-                                       data-search-on-enter-key="true">
+                                       data-search-on-enter-key="true"
+                                       data-query-params="add_custom_search_params">
+                                    <!--data-toolbar="#custom-filters-report-table"-->
 
                                     <thead>
 
@@ -78,12 +75,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                                 <script>
+                                    custom_search_toolbar_injected = false;
+                                    $(document).ready(function () {
+                                        $('.bs-tbl').on('post-header.bs.table', function (data) {
+                                            if (!custom_search_toolbar_injected) {
+                                                search_container = $('.bootstrap-table .search').html();
+                                                $('.bootstrap-table .search').addClass('input-group');
+                                                custom_search_toolbar = '<span class="input-group-addon"><?=lang('product_sold');?> ' +
+                                                    '<label><input type="radio" name="filters[sold]" value="1"> <?=lang('product_chips_sold_yes');?></label> &nbsp;' +
+                                                    '<label><input type="radio" name="filters[sold]" value="0"> <?=lang('product_chips_sold_no');?></label> &nbsp;' +
+                                                    '<label><input type="radio" name="filters[sold]" value="" checked> <?=lang('common_all');?></label> ' +
+                                                    '</span>';
+                                                $('.bootstrap-table .search').prepend(custom_search_toolbar);
+                                                $('.bootstrap-table .search').css('max-width', '450px');
+                                                custom_search_toolbar_injected = true;
+
+                                                $('[name="filters[sold]"]').click(function () {
+                                                    $('#report-table').bootstrapTable('refresh', {silent: true});
+                                                });
+                                            }
+                                        });
+                                    });
+
+                                    function add_custom_search_params(params) {
+                                        if ($('[name="filters[sold]"]:checked').length > 0 && $('[name="filters[sold]"]:checked').val() != "") {
+                                            params.sold = $('[name="filters[sold]"]:checked').val();
+                                        }
+                                        return params;
+                                    }
 
                                     function is_sold(value, row, index){
 
-                                        var sold = 'No';
+                                        var sold = '<?=lang('product_chips_sold_no');?>';
 
-                                        if(value == 1 || value == '1') sold = 'Yes';
+                                        if (value == 1 || value == '1') sold = '<?=lang('product_chips_sold_yes');?>';
 
                                         return sold;
 

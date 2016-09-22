@@ -59,6 +59,22 @@
                                                 <input type="password" class="form-control"
                                                        name="password_confirmation"></div>
                                         </div>
+
+                                        <script
+                                            src="<?php echo base_url($plugins_dir . '/pwstrength/pwstrength.min.js'); ?>"></script>
+                                        <script>
+                                            $(document).ready(function () {
+                                                $(':password').not('[name="password_confirmation"]').pwstrength({
+                                                    ui: {
+                                                        showVerdictsInsideProgressBar: true,
+                                                        progressBarExtraCssClasses: 'pwstrength-progressbar'
+                                                    },
+                                                    common: {
+                                                        minChar: 4
+                                                    }
+                                                });
+                                            });
+                                        </script>
                                     </div>
                                     <div class="row width-sixty">
                                         <div class="col-md-6">

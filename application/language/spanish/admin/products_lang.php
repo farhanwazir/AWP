@@ -46,3 +46,7 @@ $lang['product_chips_old_stock'] = 'Total chips anterior';
 $lang['product_chips_stock'] = 'Total chips';
 
 $lang['product_chips_transaction_amount'] = 'Chips transferidos';
+
+$lang['product_chips_sold_yes'] = 'Yes';
+$lang['product_chips_sold_no'] = 'No';
+

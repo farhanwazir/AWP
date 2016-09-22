@@ -65,3 +65,4 @@ $lang['common_created_at_transfer'] = 'Fecha de transferencia';
 $lang['common_search'] = 'Buscar';
 $lang['common_upload'] = 'Cargar';
 
+$lang['common_all'] = 'Todas';

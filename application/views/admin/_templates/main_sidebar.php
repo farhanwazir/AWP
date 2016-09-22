@@ -146,12 +146,12 @@
                 <li class="header text-uppercase"><?php echo lang('menu_reports'); ?></li>
 
                 <?php if ($user_data->user_type == 'a'): ?>
-                    <!--<li class="<? /*=(active_link_controller('airtime_controller') == 'active')? active_link_function('index_stock') : ''; */ ?>">
-                        <a href="<?php /*echo site_url('admin/report/airtime/stock/history'); */ ?>">
+                    <li class="<?= (active_link_controller('airtime_controller') == 'active') ? active_link_function('index_stock') : ''; ?>">
+                        <a href="<?php echo site_url('admin/report/airtime/stock/history'); ?>">
                             <i class="fa fa-user"></i>
-                            <span><?php /*echo lang('menu_history_airtime'); */ ?></span>
+                            <span><?php echo lang('menu_history_airtime'); ?></span>
                         </a>
-                    </li>-->
+                    </li>
                     <li class="<?=(active_link_controller('companies_controller') == 'active')? active_link_function('index') : ''; ?>">
                         <a href="<?php echo site_url('admin/report/sales'); ?>">
                             <i class="fa fa-user"></i>
@@ -186,12 +186,12 @@
                         </a>
                     </li>
                 <?php endif; ?>
-                <li class="<?=(active_link_controller('airtime_controller') == 'active')? active_link_function('index') : ''; ?>">
-                    <a href="<?php echo site_url('admin/report/airtime/sales'); ?>">
+                <!--<li class="<? /*=(active_link_controller('airtime_controller') == 'active')? active_link_function('index') : ''; */ ?>">
+                    <a href="<?php /*echo site_url('admin/report/airtime/sales'); */ ?>">
                         <i class="fa fa-user"></i>
-                        <span><?php echo lang('menu_reports_airtime_sale'); ?></span>
+                        <span><?php /*echo lang('menu_reports_airtime_sale'); */ ?></span>
                     </a>
-                </li>
+                </li>-->
                 <li class="<?=(active_link_controller('chips_controller') == 'active')? active_link_function('index') : ''; ?>">
                     <a href="<?php echo site_url('admin/report/chips/sales'); ?>">
                         <i class="fa fa-user"></i>
