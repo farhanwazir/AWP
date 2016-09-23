@@ -16,6 +16,8 @@ $lang['common_report_col_transaction_type']             = 'Service/Product';
 
 $lang['common_report_col_sale_amount']             = 'Amount';
 
+$lang['common_report_col_item_price'] = 'Item price';
+
 $lang['common_report_col_profit_fraction']             = 'Profit fraction';
 
 $lang['common_report_col_profit']             = 'Star earn';

@@ -64,7 +64,7 @@ $lang['users_type_outlet']           = 'Punto de venta';
 
 $lang['users_type_star']           = 'Estrella';
 
-$lang['users_deactive_users'] = 'Usuario Desactivadas';
+$lang['users_deactive_users'] = 'Usuarios Desactivados';
 
 $lang['users_admin_password'] = 'Administrador contraseña';
 

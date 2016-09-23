@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $lang['product_add']         = 'Agregar nuevos Chips';
 
-$lang['product_cicdn']         = 'CICDN';
+$lang['product_cicdn'] = 'ICCID';
 
 $lang['product_sold']         = 'Vendido';
 

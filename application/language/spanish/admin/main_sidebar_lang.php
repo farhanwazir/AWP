@@ -167,7 +167,8 @@ $lang['menu_client_register'] = 'Agregar nuevo cliente';
 
 /* * */$lang['menu_reports']                     = 'Menú Reportes';
 
-/* ****** */$lang['menu_history_airtime']             = 'Reporte Recargas TA';
+/* ****** */
+$lang['menu_history_airtime'] = 'Historial de Tiempo Aire';
 
 /* ****** */$lang['menu_reports_stats']             = 'Informes y estadísticas de menú';
 
@@ -177,16 +178,16 @@ $lang['menu_client_register'] = 'Agregar nuevo cliente';
 $lang['menu_reports_conciliation'] = 'Reporte de conciliación';
 
 /* ****** */
-$lang['menu_reports_star_conciliation'] = 'Reporte de Conciliación por estrella';
+$lang['menu_reports_star_conciliation'] = 'Reporte de conciliación tiempo aire Estrella';
 
 /* ****** */
-$lang['menu_reports_company_conciliation'] = 'Reporte de conciliación por cliente';
+$lang['menu_reports_company_conciliation'] = 'Reporte de Conciliación Tiempo Aire';
 
 /* ****** */
 $lang['menu_reports_company_chips_conciliation'] = 'Reporte de Conciliación Chips';
 
 /* ****** */
-$lang['menu_reports_all_stars_sale'] = 'Historial de Tiempo Aire'; /*'Reporte de Ventas';*/
+$lang['menu_reports_all_stars_sale'] = 'Historial de Ventas'; /*'Reporte de Ventas';*/
 
 /* ****** */$lang['menu_reports_airtime_sale']             = 'Reporte ventas de TA';
 

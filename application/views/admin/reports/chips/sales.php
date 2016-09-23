@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     <th data-field="transaction_id"><?= lang('common_report_col_transaction_id'); ?></th>
                                     <th data-field="star_id"><?= lang('common_report_col_star'); ?></th>
                                     <th data-field="product_type"><?= lang('chip_col_transaction_type'); ?></th>
-                                    <th data-field="sale_amount"><?= lang('common_report_col_sale_amount'); ?></th>
+                                    <th data-field="sale_amount"><?= lang('common_report_col_item_price'); ?></th>
                                     <th data-field="profit_fraction"><?= lang('common_report_col_profit_fraction'); ?></th>
                                     <th data-field="profit"><?= lang('common_report_col_profit'); ?></th>
                                     <th data-field="created_at"><?= lang('common_report_col_created_at'); ?></th>

@@ -15,6 +15,8 @@ $lang['common_report_col_transaction_type'] = 'Servicio/Producto';
 
 $lang['common_report_col_sale_amount'] = 'Monto';
 
+$lang['common_report_col_item_price'] = 'Precio de Lista';
+
 $lang['common_report_col_profit_fraction'] = '% de ganancia';
 
 $lang['common_report_col_profit'] = 'Ganancia Estrella';

@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                     <th data-field="sold" data-formatter="is_sold"><?=lang('product_sold');?></th>
 
-                                    <th data-field="actions_col" data-formatter="add_actions" data-events="add_actions_events"></th>
+                                    <!--<th data-field="actions_col" data-formatter="add_actions" data-events="add_actions_events"></th>-->
 
                                     </thead>
 
