@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     <th data-field="star_id"><?= lang('common_report_col_conciliation_star'); ?></th>
                                     <th data-field="operator"><?= lang('common_report_col_operator'); ?></th>
                                     <th data-field="sale_amount"><?= lang('common_report_col_conciliation_sale_amount'); ?></th>
-                                    <th data-field="profit"><?= lang('common_report_col_conciliation_profit'); ?></th>
+                                    <th data-field="amount_paid"><?= lang('common_report_col_conciliation_profit'); ?></th>
                                     <th data-field="created_at"><?= lang('common_report_col_created_at'); ?></th>
                                     </thead>
                                 </table>

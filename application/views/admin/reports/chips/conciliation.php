@@ -40,7 +40,7 @@
                                     <th data-field="description"><?= lang('common_description'); ?></th>
                                     <th data-field="cost"><?= lang('common_report_col_conciliation_unit_cost'); ?></th>
                                     <th data-field="sale_amount"><?= lang('common_report_col_sale_amount'); ?></th>
-                                    <th data-field="amount_paid"><?= lang('common_report_col_conciliation_company_profit'); ?></th>
+                                    <th data-field="amount_paid"><?= lang('common_report_col_conciliation_profit'); ?></th>
                                     <th data-field="created_at"><?= lang('common_report_col_created_at'); ?></th>
                                     </thead>
                                 </table>
