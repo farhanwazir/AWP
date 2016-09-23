@@ -20,6 +20,27 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             class="info-box-number">1.2.1</span></div>
                 </div>
             </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="callout callout-success lead">
+                    <h4><?= lang('service_available_balance') ?></h4>
+
+                    <p id="available-balance-status">
+                        <?=$airtime_available_balance;?>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="callout callout-info lead">
+                    <h4><?= lang('service_consumed_balance') ?></h4>
+
+                    <p id="available-balance-status">
+                        <?=$airtime_consumed_balance;?>
+                    </p>
+                </div>
+            </div>
+
             <!--<div class="clearfix visible-sm-block"></div>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box"><span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span>
