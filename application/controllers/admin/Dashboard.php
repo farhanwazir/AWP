@@ -19,7 +19,7 @@ class Dashboard extends Admin_Controller
 
         $this->load->helper('number');
 
-        $this->load->model('admin/admindashboard');
+        $this->load->model('admin/adminDashboard');
 
     }
 
@@ -51,9 +51,9 @@ class Dashboard extends Admin_Controller
 
             /* Data */
             $data['bar_code'] = 900000;
-            $airtime_stats = $this->admindashboard->getAirtimeStats($data);
-            $airtime_master_balance = $this->admindashboard->getMasterBalance($data);
-            $airtime_server_balance = $this->admindashboard->getServerBalance(); //For AT&T balance
+            $airtime_stats = $this->adminDashboard->getAirtimeStats($data);
+            $airtime_master_balance = $this->adminDashboard->getMasterBalance($data);
+            $airtime_server_balance = $this->adminDashboard->getServerBalance(); //For AT&T balance
 
             $this->data['airtime_consumed_balance'] = isset($airtime_stats->consumed_balance) ? $airtime_stats->consumed_balance : 0;
 

@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <div class="callout callout-success lead">
+                <div class="callout callout-info lead">
                     <h4>
                         <?php if ($user_data->user_type == 'a') :
                             echo lang('dashboard_airtime_companies_available_balance');
@@ -63,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
             </div>
 
             <div class="col-md-6 col-sm-12">
-                <div class="callout callout-info lead">
+                <div class="callout callout-success lead">
                     <h4>
                         <?php if ($user_data->user_type == 'a') :
                             echo lang('dashboard_airtime_companies_consumed_balance');

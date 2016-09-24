@@ -4,7 +4,7 @@ require_once(APPPATH . 'core/Api_model.php');
 
 class AdminDashboard extends Api_model
 {
-    private $endpoint_airtime_stats;
+    private $endpoint_airtime_stats, $endpoint_airtime_master_current, $endpoint_airtime_server_current;
 
     public function __construct()
     {
