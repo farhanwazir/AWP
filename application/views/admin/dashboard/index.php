@@ -1,26 +1,12 @@
-<?php /* */
-defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="content-wrapper">
-    <section class="content-header">        <?php /* */
-        echo $pagetitle; ?><?php /* */
-        echo $breadcrumb; ?>    </section>
+    <section class="content-header">
+        <?php echo $pagetitle; ?>
+        <?php echo $breadcrumb; ?>
+    </section>
     <section class="content">
         <?php if ($user_data->user_type == 'a'): ?>
         <div class="row">
-            <!--<div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box"><span class="info-box-icon bg-maroon"><i class="fa fa-legal"></i></span>
-
-                    <div class="info-box-content"><span class="info-box-text">Licencia</span> <span
-                            class="info-box-number">Springlabs</span></div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="info-box"><span class="info-box-icon bg-green"><i class="fa fa-check"></i></span>
-
-                    <div class="info-box-content"><span class="info-box-text">Versión</span> <span
-                            class="info-box-number">1.2.1</span></div>
-                </div>
-            </div>-->
 
             <div class="clearfix visible-sm-block"></div>
             <div class="col-md-6 col-sm-12">
@@ -69,8 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                             echo lang('dashboard_airtime_companies_consumed_balance');
                         else :
                             echo lang('service_consumed_balance');
-                        endif;
-                        ?>
+                        endif; ?>
                     </h4>
 
                     <p id="available-balance-status">

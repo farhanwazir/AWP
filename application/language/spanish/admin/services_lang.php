@@ -40,7 +40,7 @@ $lang['service_company_not_selected']         = 'Ninguna empresa seleccionada';
 
 $lang['service_outlet_not_selected']         = 'Ningún medio seleccionado';
 
-$lang['service_consumed_balance'] = 'Saldo Consumido';
-$lang['service_available_balance'] = 'Saldo Disponible';
+$lang['service_consumed_balance'] = 'Saldo consumido Tiempo Aire';
+$lang['service_available_balance'] = 'Saldo disponible Tiempo Aire';
 
 

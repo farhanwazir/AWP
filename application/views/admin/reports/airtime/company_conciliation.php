@@ -16,10 +16,16 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                         endif; ?>
                         <div class="row">
                             <div class="col-md-12">                                <!-- Content table -->
-                                <table id="report-table" class="table table-bordered table-responsive bs-tbl"
-                                       data-toggle="table" data-url="<?= base_url() ?><?= $table_data_ajax_path; ?>"
-                                       data-pagination="true" data-side-pagination="server" data-data-field="data"
-                                       data-show-columns="true" data-show-export="true" data-query-params="set_params"
+                                <table id="report-table"
+                                       class="table table-bordered table-responsive bs-tbl"
+                                       data-toggle="table"
+                                       data-url="<?= base_url() ?><?= $table_data_ajax_path; ?>"
+                                       data-pagination="true"
+                                       data-side-pagination="server"
+                                       data-data-field="data"
+                                       data-show-columns="true"
+                                       data-show-export="true"
+                                       data-query-params="set_params"
                                        data-sort-order="desc">
                                     <thead>
                                     <th data-field="transaction_id"><?= lang('common_report_col_conciliation_transaction_no'); ?></th>
@@ -29,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
                                     <th data-field="star_id"><?= lang('common_report_col_conciliation_star'); ?></th>
                                     <th data-field="operator"><?= lang('common_report_col_operator'); ?></th>
                                     <th data-field="sale_amount"><?= lang('common_report_col_conciliation_sale_amount'); ?></th>
-                                    <th data-field="profit"><?= lang('common_report_col_conciliation_profit'); ?></th>
+                                    <th data-field="amount_paid"><?= lang('common_report_col_conciliation_profit'); ?></th>
                                     <th data-field="created_at"><?= lang('common_report_col_created_at'); ?></th>
                                     </thead>
                                 </table>

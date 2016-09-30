@@ -55,13 +55,13 @@ class Dashboard extends Admin_Controller
             $airtime_master_balance = $this->adminDashboard->getMasterBalance($data);
             $airtime_server_balance = $this->adminDashboard->getServerBalance(); //For AT&T balance
 
-            $this->data['airtime_consumed_balance'] = isset($airtime_stats->consumed_balance) ? $airtime_stats->consumed_balance : 0;
+            $this->data['airtime_consumed_balance'] = '$' . number_format(isset($airtime_stats->consumed_balance) ? $airtime_stats->consumed_balance : 0, 2);
 
-            $this->data['airtime_available_balance'] = isset($airtime_stats->total_available_balance) ? $airtime_stats->total_available_balance : 0;
+            $this->data['airtime_available_balance'] = '$' . number_format(isset($airtime_stats->total_available_balance) ? $airtime_stats->total_available_balance : 0, 2);
 
-            $this->data['airtime_master_balance'] = isset($airtime_master_balance->balance) ? $airtime_master_balance->balance : 0;
+            $this->data['airtime_master_balance'] = '$' . number_format(isset($airtime_master_balance->balance) ? $airtime_master_balance->balance : 0, 2);
 
-            $this->data['airtime_server_balance'] = isset($airtime_server_balance->balance) ? $airtime_server_balance->balance : 0;
+            $this->data['airtime_server_balance'] = '$' . number_format(isset($airtime_server_balance->balance) ? $airtime_server_balance->balance : 0, 2);
 
             $this->data['today_airtime_sales'] = '';
 

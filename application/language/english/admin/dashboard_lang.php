@@ -17,4 +17,8 @@ $lang['dashboard_airtime_companies_available_balance'] = 'All companies airtime 
 $lang['dashboard_airtime_master_available_balance'] = 'Airtime master available'; //
 $lang['dashboard_airtime_server_available_balance'] = 'Airtime available on AT&T'; //
 
+//only for company dashboard (not used)
+$lang['dashboard_airtime_company_consumed_balance'] = 'Saldo consumido Tiempo Aire';
+$lang['dashboard_airtime_company_available_balance'] = 'Saldo disponible Tiempo Aire';
+
 
