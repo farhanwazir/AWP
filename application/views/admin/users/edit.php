@@ -125,7 +125,7 @@ defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
                                         $('#user-edit-form').submit(function (e) {
                                             e.preventDefault();
-                                            if ($('[name="password"]').length > 0) {
+                                            if ($('[name="password"]').val().length > 0) {
                                                 if ($('[name="admin_password"]').val() != '') {
                                                     this.submit();
                                                 }
