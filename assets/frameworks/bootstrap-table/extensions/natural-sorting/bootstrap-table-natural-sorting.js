@@ -25,14 +25,14 @@ function alphanum(a, b) {
                 n = m;
             }
             tz[y] += j;
-        }
+    }
         return tz;
     }
 
     function stringfy(v) {
         if (typeof(v) === "number") {
             v = "" + v;
-        }
+    }
         if (!v) {
             v = "";
         }
@@ -52,7 +52,7 @@ function alphanum(a, b) {
             } else {
                 return (aa[x] > bb[x]) ? 1 : -1;
             }
-        }
+    }
     }
     return aa.length - bb.length;
 }

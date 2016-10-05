@@ -35,12 +35,16 @@ echo base_url($plugins_dir . '/icheck/js/icheck.min.js'); ?>"></script>
 <script src="<?php /* */
 echo base_url($plugins_dir . '/bootstrap-switch/js/bootstrap-switch.min.js'); ?>"></script><!-- Bootstrap-table data export -->
 
-<script>    $(document).ready(function () {
+<script>
+    $(document).ready(function () {
         !$('input:not(".iCheckOff"):not("[data-field]")').iCheck({
             checkboxClass: 'icheckbox_flat-blue',
             radioClass: 'iradio_flat-blue',
             increaseArea: '-20%'
         });
+
+        $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['es-MX']);
+
         $('.bs-tbl').on('load-error.bs.table', function (status, res) {
             new PNotify({title: 'Table remote data', text: 'Status: ' + status + ', Res: ' + res, type: 'error'});
         });
@@ -49,10 +53,9 @@ echo base_url($plugins_dir . '/bootstrap-switch/js/bootstrap-switch.min.js'); ?>
                 new PNotify({title: 'Table remote data', text: 'data: ' + data, type: 'error'});
             }
         });
-        /*$.fn.bootstrapTable.defaults = {sortOrder: 'desc'};*/
-        $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['es-MX']);
-        /*$('.bs-tbl').on('all.bs.table', function (e, name, args) {         console.log(name, args);         });*/
-    });</script>
+
+    });
+</script>
 <script src="<?php /* */
 echo base_url($plugins_dir . '/tableExport/tableExport.js'); ?>"></script><!--Export table dependency of bootstrap-table -->
 <script src="<?php /* */
