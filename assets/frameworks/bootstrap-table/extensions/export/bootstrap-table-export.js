@@ -21,7 +21,7 @@
     };
 
     $.extend($.fn.bootstrapTable.defaults, {
-        showExport: false,
+        showExport: true,
         exportDataType: 'all', // basic, all, selected
         // 'json', 'xml', 'png', 'csv', 'txt', 'sql', 'doc', 'excel', 'powerpoint', 'pdf'
         exportTypes: ['csv', 'excel'],

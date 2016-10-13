@@ -26,6 +26,8 @@ endif; ?>
 <script src="<?php echo base_url($plugins_dir . '/daterangepicker/moment.js'); ?>"></script>
 <script src="<?php echo base_url($plugins_dir . '/daterangepicker/daterangepicker.js'); ?>"></script>
 <script src="<?php echo base_url($plugins_dir . '/icheck/js/icheck.min.js'); ?>"></script>
+<script src="<?php echo base_url($plugins_dir . '/inputmask/jquery.inputmask.bundle.min.js'); ?>"></script>
+
 <script
     src="<?php echo base_url($plugins_dir . '/bootstrap-switch/js/bootstrap-switch.min.js'); ?>"></script><!-- Bootstrap-table data export -->
 
@@ -46,6 +48,10 @@ endif; ?>
 
 <script>
     $(document).ready(function () {
+
+        $('input[name="telephone"]').inputmask();
+        $('input[name="age"]').inputmask();
+
         !$('input:not(".iCheckOff"):not("[data-field]")').iCheck({
             checkboxClass: 'icheckbox_flat-blue',
             radioClass: 'iradio_flat-blue',
@@ -53,6 +59,7 @@ endif; ?>
         });
 
         $.extend($.fn.bootstrapTable.defaults, $.fn.bootstrapTable.locales['es-MX']);
+
 
         $('.bs-tbl').on('load-error.bs.table', function (status, res) {
             new PNotify({title: 'Table remote data', text: 'Status: ' + status + ', Res: ' + res, type: 'error'});
@@ -62,7 +69,6 @@ endif; ?>
                 new PNotify({title: 'Table remote data', text: 'data: ' + data, type: 'error'});
             }
         });
-
     });
 </script>
 

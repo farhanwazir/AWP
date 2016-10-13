@@ -23,11 +23,12 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group"><label
-                                                    for="email"><?= lang('common_email'); ?></label> <input type="text"
-                                                                                                            class="form-control"
-                                                                                                            name="email"
-                                                                                                            value="<?= isset($_POST['email']) ? $_POST['email'] : ''; ?>">
+                                            <div class="form-group">
+                                                <label for="email">
+                                                    <?= lang('common_email'); ?> <?= lang('common_required'); ?>
+                                                </label>
+                                                <input type="text" class="form-control" name="email"
+                                                       value="<?= isset($_POST['email']) ? $_POST['email'] : ''; ?>">
                                             </div>
                                         </div>
                                     </div>
@@ -35,7 +36,8 @@
                                         <div class="col-md-6">
                                             <div class="form-group"><label
                                                     for="telephone"><?= lang('common_telephone'); ?> <?= lang('common_required'); ?></label>
-                                                <input type="text" class="form-control" name="telephone"
+                                                <input type="text" data-inputmask="'mask': '9999999999'"
+                                                       class="form-control" name="telephone"
                                                        value="<?= isset($_POST['telephone']) ? $_POST['telephone'] : ''; ?>">
                                             </div>
                                         </div>
@@ -55,7 +57,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group"><label
-                                                    for="password_confirmation"><?= lang('common_confirm_password'); ?></label>
+                                                    for="password_confirmation"><?= lang('common_confirm_password'); ?>  <?= lang('common_required'); ?></label>
                                                 <input type="password" class="form-control"
                                                        name="password_confirmation"></div>
                                         </div>
@@ -79,7 +81,9 @@
                                     <div class="row width-sixty">
                                         <div class="col-md-6">
                                             <div class="form-group"><label for="age"><?= lang('users_age'); ?></label>
-                                                <input type="text" class="form-control" name="age"></div>
+                                                <input type="text" class="form-control" name="age"
+                                                       data-inputmask="'mask': '99/99/9999'"
+                                                       placeholder="Month/Date/Year"></div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group"><label

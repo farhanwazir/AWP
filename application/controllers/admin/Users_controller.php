@@ -444,17 +444,14 @@ class Users_controller extends Admin_Controller
         if ($this->form_validation->run() == FALSE) {
 
             header("Location: {$_SERVER['HTTP_REFERER']}");
-
             exit;
 
         } else {
 
             $data = $_REQUEST;
-
             $this->users->change($data);
-
-            redirect('admin/client/users', 'location', 301);
-
+            if ($data['user_type'] == 'a') redirect('admin/system/users', 'location', 301);
+            else redirect('admin/client/users', 'location', 301);
         }
 
     }
