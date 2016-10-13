@@ -234,167 +234,78 @@ class Airtime_controller extends Admin_Controller
 
     public function getRawData_conciliation()
     {
-
         $data = $_REQUEST;
-
         $data = $this->airtime->getConciliation($data);
-
         $this->output->set_content_type('application/json')
             ->set_output(json_encode($data[0]));
-
     }
 
 
-
     public function index_star_conciliation()
-
     {
-
-
         /* Title Page :: Common */
-
-
         $this->page_title->push(lang('airtime_star_conciliation_report_title'));
-
-
         $this->data['pagetitle'] = $this->page_title->show();
 
-
         /* Breadcrumbs :: Common */
-
-
         $this->breadcrumbs->unshift(1, lang('menu_reports_star_conciliation'), 'admin/report/airtime/star/conciliation');
-
-
         $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
-
         /* Data */
-
-
         $this->data['error'] = NULL;
-
-
         $this->data['charset'] = 'utf-8';
-
-
         $this->data['table_data_ajax_path'] = 'admin/report/airtime/star/conciliation/ajax';
-
-
         if ($this->data['user_data']->user_type == 'a'):
-
             /* Companies */
-
-
             $this->load->model('admin/companies');
-
-
             $companies = $this->companies->getData();
-
-
             $this->data['companies_option'] = '';
-
-
             foreach ($companies[0]->data as $company) {
-
-
                 $this->data['companies_option'] .= '<option value="' . $company->company_id . '">' . $company->company_id . ' -- ' . $company->name . '</option>';
-
-
             }
-
         endif;
 
-
         /* Load Template */
-
-
         $this->template->admin_render('admin/reports/airtime/conciliation', $this->data);
-
-
     }
 
 
     public function getRawData_star_conciliation()
-
     {
-
-
         $data = $_REQUEST;
-
-
         $data = $this->airtime->getStarConciliation($data);
-
-
         $this->output->set_content_type('application/json')
-
             ->set_output(json_encode($data[0]));
-
-
     }
 
 
     public function index_company_conciliation()
-
     {
-
-
         /* Title Page :: Common */
 
-
         $this->page_title->push(lang('menu_reports_company_conciliation'));
-
-
         $this->data['pagetitle'] = $this->page_title->show();
 
-
         /* Breadcrumbs :: Common */
-
-
         $this->breadcrumbs->unshift(1, lang('menu_reports_company_conciliation'), 'admin/report/airtime/company/conciliation');
-
-
         $this->data['breadcrumb'] = $this->breadcrumbs->show();
 
-
         /* Data */
-
-
         $this->data['error'] = NULL;
-
-
         $this->data['charset'] = 'utf-8';
-
-
         $this->data['table_data_ajax_path'] = 'admin/report/airtime/company/conciliation/ajax';
-
-
         if ($this->data['user_data']->user_type == 'a'):
-
             /* Companies */
-
-
             $this->load->model('admin/companies');
-
-
             $companies = $this->companies->getData();
-
-
             $this->data['companies_option'] = '';
-
             foreach ($companies[0]->data as $company) {
-
                 $this->data['companies_option'] .= '<option value="' . $company->company_id . '">' . $company->company_id . ' -- ' . $company->name . '</option>';
-
             }
-
         endif;
 
-
         /* Load Template */
-
         $this->template->admin_render('admin/reports/airtime/company_conciliation', $this->data);
-
     }
 
 

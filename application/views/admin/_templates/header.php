@@ -35,52 +35,44 @@
     <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/adminlte/css/adminlte.min.css'); ?>">
     <link rel="stylesheet"
           href="<?php echo base_url($frameworks_dir . '/adminlte/css/skins/skin-blue.min.css'); ?>"> <?php if ($mobile === FALSE && !isset($admin_prefs['transition_page'])): ?>
+        <link rel="stylesheet" href="<?php echo base_url($plugins_dir . '/animsition/animsition.min.css'); ?>">
+    <?php endif; ?>
+    <?php if ($this->router->fetch_class() == 'groups' && ($this->router->fetch_method() == 'create' OR $this->router->fetch_method() == 'edit')): ?>
         <link rel="stylesheet"
-              href="<?php echo base_url($plugins_dir . '/animsition/animsition.min.css'); ?>">    <?php endif; ?>    <?php if ($this->router->fetch_class() == 'groups' && ($this->router->fetch_method() == 'create' OR $this->router->fetch_method() == 'edit')): ?>
-        <link rel="stylesheet" href="<?php
-        echo base_url($plugins_dir . '/colorpickersliders/colorpickersliders.min.css'); ?>">    <?php
+              href="<?php echo base_url($plugins_dir . '/colorpickersliders/colorpickersliders.min.css'); ?>">    <?php
     endif; ?>
-    <link rel="stylesheet" href="<?php
-    echo base_url($frameworks_dir . '/domprojects/css/dp.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/domprojects/css/dp.min.css'); ?>">
     <!-- Bootstrap tables -->
-    <link rel="stylesheet" href="<?php
-    echo base_url($frameworks_dir . '/bootstrap-table/bootstrap-table.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/bootstrap-table/bootstrap-table.css'); ?>">
     <!-- End Bootstrap tables -->
-    <link rel="stylesheet" href="<?php
-    echo base_url($plugins_dir . '/daterangepicker/daterangepicker.css'); ?>">
-    <link rel="stylesheet" href="<?php
-    echo base_url($plugins_dir . '/icheck/css/extensions/all.css'); ?>">
-    <link rel="stylesheet" href="<?php
-    echo base_url($plugins_dir . '/bootstrap-switch/css/bootstrap-switch.min.css'); ?>">
-    <link rel="stylesheet" href="<?php
-    echo base_url($frameworks_dir . '/auricell/css/style.css'); ?>">
-    <link rel="stylesheet" href="<?php
-    echo base_url($plugins_dir . '/PNotify/pnotify.custom.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url($plugins_dir . '/daterangepicker/daterangepicker.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url($plugins_dir . '/icheck/css/extensions/all.css'); ?>">
+    <link rel="stylesheet"
+          href="<?php echo base_url($plugins_dir . '/bootstrap-switch/css/bootstrap-switch.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url($frameworks_dir . '/auricell/css/style.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url($plugins_dir . '/PNotify/pnotify.custom.min.css'); ?>">
     <?php if ($mobile === FALSE): ?>
         <!--[if lt IE 9]>
         <script src="<?php  echo base_url($plugins_dir . '/html5shiv/html5shiv.min.js'); ?>"></script>
         <script src="<?php  echo base_url($plugins_dir . '/respond/respond.min.js'); ?>"></script>
         <![endif]-->
     <?php endif; ?>
-    <script src="<?php
-    echo base_url($frameworks_dir . '/jquery/jquery.min.js'); ?>"></script>
-    <script src="<?php
-    echo base_url($frameworks_dir . '/bootstrap/js/bootstrap.min.js'); ?>"></script>
-    <script src="<?php
-    echo base_url($plugins_dir . '/PNotify/pnotify.custom.min.js'); ?>"></script>
+    <script src="<?php echo base_url($frameworks_dir . '/jquery/jquery.min.js'); ?>"></script>
+    <script src="<?php echo base_url($frameworks_dir . '/bootstrap/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo base_url($plugins_dir . '/PNotify/pnotify.custom.min.js'); ?>"></script>
     <script> PNotify.prototype.options.styling = "bootstrap3"; </script>
     <!-- Bootstrap table -->
-    <script src="<?php
-    echo base_url($frameworks_dir . '/bootstrap-table/bootstrap-table.js'); ?>"></script>
-    <script src="<?php
-    echo base_url($frameworks_dir . '/bootstrap-table/locale/bootstrap-table-es-MX.js'); ?>"></script>
-    <script src="<?php
-    echo base_url($frameworks_dir . '/bootstrap-table/extensions/export/bootstrap-table-export.js'); ?>"></script>
+    <script src="<?php echo base_url($frameworks_dir . '/bootstrap-table/bootstrap-table.js'); ?>"></script>
+    <script
+        src="<?php echo base_url($frameworks_dir . '/bootstrap-table/locale/bootstrap-table-es-MX.js'); ?>"></script>
+    <script
+        src="<?php echo base_url($frameworks_dir . '/bootstrap-table/extensions/export/bootstrap-table-export.js'); ?>"></script>
 
-    <!-- End Bootstrap table --></head>
-<body class="hold-transition skin-blue fixed sidebar-mini"><?php
-if ($mobile === FALSE /*&& $admin_prefs['transition_page'] == TRUE*/): ?>
-<div class="wrapper ">    <?php
-    else: ?>
-    <div class="wrapper">        <?php
-        endif; ?>
+    <!-- End Bootstrap table -->
+</head>
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<?php if ($mobile === FALSE): ?>
+<div class="wrapper ">
+    <?php else: ?>
+    <div class="wrapper">
+        <?php endif; ?>

@@ -31,13 +31,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                 <div class="box">
-
                     <div class="box-body">
-
                         <div class="row">
-
                             <div class="col-md-12">
-
                                 <!-- Content table -->
                                 <table id="report-table"
                                        class="table table-bordered table-responsive bs-tbl"

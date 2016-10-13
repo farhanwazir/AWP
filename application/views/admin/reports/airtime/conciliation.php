@@ -1,21 +1,24 @@
 <?php /* */
 defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="content-wrapper">
-    <section class="content-header">        <?php /* */
-        echo $pagetitle; ?><?php /* */
-        echo $breadcrumb; ?>    </section>
+    <section class="content-header">
+        <?php echo $pagetitle; ?>
+        <?php echo $breadcrumb; ?>
+    </section>
     <section class="content">
         <div class="row">
-            <div class="col-md-12">                <?php /* */
-                echo $error; ?>
+            <div class="col-md-12">
+                <?php echo $error; ?>
                 <div class="box">
-                    <div class="box-body">                        <?php /* */
-                        if ($user_data->user_type == 'a'): ?><?php /* */
-                            $this->load->view('admin/reports/partials/company_report_filters.php'); ?><?php /* */ else: ?><?php /* */
-                            $this->load->view('admin/reports/partials/filters.php'); ?><?php /* */
-                        endif; ?>
+                    <div class="box-body">
+                        <?php if ($user_data->user_type == 'a'): ?>
+                            <?php $this->load->view('admin/reports/partials/company_report_filters.php'); ?>
+                        <?php else: ?>
+                            <?php $this->load->view('admin/reports/partials/filters.php'); ?>
+                        <?php endif; ?>
                         <div class="row">
-                            <div class="col-md-12">                                <!-- Content table -->
+                            <div class="col-md-12">
+                                <!-- Content table -->
                                 <table id="report-table" class="table table-bordered table-responsive bs-tbl"
                                        data-toggle="table" data-url="<?= base_url() ?><?= $table_data_ajax_path; ?>"
                                        data-pagination="true" data-side-pagination="server" data-data-field="data"
